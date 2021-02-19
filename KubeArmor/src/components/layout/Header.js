@@ -38,7 +38,7 @@ const Header = () => {
           {/* <AnchorLink className="px-4 mt-2" href="https://kubearmor.herokuapp.com/">
             Slack
           </AnchorLink> */}
-          <a className="px-4 mt-2" href="https://kubearmor.herokuapp.com/">
+          <a className="px-4 mt-2" href="https://kubearmor.herokuapp.com/" target="_blank">
             Slack
           </a>
 
