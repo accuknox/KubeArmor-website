@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "gatsby": "^2.18.18",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-sharp": "^2.14.1",
+    "gatsby-source-filesystem": "^2.11.0",
     "gatsby-theme-codebushi": "1.0.0",
+    "gatsby-transformer-sharp": "^2.12.0",
     "react": "^16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.12.0"
