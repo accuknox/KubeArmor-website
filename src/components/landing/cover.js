@@ -23,7 +23,7 @@ const Cover = () => {
         <div className="container mx-auto px-8 lg:flex">
           <div className="lg:w-1/2"></div>
           <div className="text-center lg:text-left lg:w-1/2">
-            <p>KubeArmor</p>
+            <p className="coverletter">KubeArmor</p>
             <h2 className="text-4xl lg:text-5xl  leading-none covertitle">
               K8s-native System Policy Audit/Alert & Enforcement Engine
             </h2>

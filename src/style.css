@@ -67,10 +67,18 @@
   font-size: 14px;
   color: #828282;
 }
+.coverletter {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  letter-spacing: 0.4px;
+}
 .Coverbutton {
   width: 24px;
   height: 24px;
-  background-color: #56ccf2;
+  background-color: #dedede;
   background-blend-mode: multiply !important;
   border-radius: 4px;
 }
@@ -81,4 +89,10 @@
 }
 .featurelist {
   color: #4f4f4f;
+}
+.Elementfeatures {
+  background-image: url('../src/images/Features/Featureelement.png');
+  background-size: cover;
+  background-size: 100% 100%;
+  width: 100%;
 }

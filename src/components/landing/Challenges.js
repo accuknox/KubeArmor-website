@@ -3,8 +3,8 @@ import LabelText from '../LabelText';
 
 const Challenges = () => {
   return (
-    <div className="lg:pb-10">
-      <section id="challenges" className="lg:pb-20 lg:pt-5">
+    <div>
+      <section id="challenges" className="lg:pb-20 lg:pt-20">
         <div className="container mx-auto">
           <h1 className="mb-10 text-gray-600 text-center ChallengeTitle">
             System Primitives & Challenges

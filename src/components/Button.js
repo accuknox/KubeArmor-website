@@ -18,6 +18,7 @@ const Button = ({ children, className = '', size }) => {
         rounded
         text-white
     `}
+      style={{ backgroundColor: '#56CCF2' }}
     >
       {children}
     </button>
