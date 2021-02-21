@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+* {
+  font-family: 'Manrope', sans-serif;
+}
 .FeatureTitle {
   font-weight: 600;
   font-size: 20px;
@@ -18,6 +22,21 @@
   font-size: 18px;
   font-weight: normal;
 }
+.securityprimarytitle {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 60px;
+}
+.securitytitle {
+  font-weight: bold;
+  font-size: 24px;
+}
+.securitydes {
+  color: #828282;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
 .ChallengeTitle {
   font-weight: 700;
   font-size: 40px;
@@ -30,8 +49,9 @@
 }
 .challengecarddes {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   padding-top: 20px;
+  color: #616161;
 }
 .covercontent {
   background-image: url('../src/images/landing/Coverpage.png');
@@ -40,9 +60,25 @@
 }
 .covertitle {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
 }
 .coverdes {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  color: #828282;
+}
+.Coverbutton {
+  width: 24px;
+  height: 24px;
+  background-color: #56ccf2;
+  background-blend-mode: multiply !important;
+  border-radius: 4px;
+}
+.featureelements {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 45px;
+}
+.featurelist {
+  color: #4f4f4f;
 }
