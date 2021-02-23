@@ -14,16 +14,32 @@ const Cover = () => {
           }
         }
       }
+      coverbg: file(relativePath: { eq: "Cover/coverkubearmor1.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
   return (
     <div className="covercontent">
-      <Header />
-      <section className="pt-20 pb-20 md:pt-40 md:pb-40 ">
+      {/* <Header /> */}
+      <section className="pt-40 pb-40 md:pt-40 md:pb-40 ">
         <div className="container mx-auto px-8 lg:flex">
-          <div className="lg:w-1/2"></div>
-          <div className="text-center lg:text-left lg:w-1/2">
-            <p className="coverletter">KubeArmor</p>
+          <div className="lg:w-1/2">
+            {/* <Img
+              fluid={query.coverbg.childImageSharp.fluid}
+              alt="Button Icon"
+              className="Coverbutton"
+              style={{ height: '100%', width: '85%' }}
+            /> */}
+          </div>
+          <div className="lg:text-left lg:w-1/2">
+            <p className="coverletter" style={{ paddingBottom: '20px' }}>
+              KubeArmor
+            </p>
             <h2 className="text-4xl lg:text-5xl  leading-none covertitle">
               K8s-native System Policy Audit/Alert & Enforcement Engine
             </h2>
