@@ -10,7 +10,8 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-import '../style.css';
+import '../Styles/style.css';
+import '../Styles/Mainstyle.css';
 const home = () => {
   return (
     <Layout>

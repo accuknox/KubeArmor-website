@@ -16,10 +16,10 @@ const Securitysection = () => {
         secondarySlot={
           <div>
             <div className="mt-5">
-              <h3 className="text-3xl font-semibold leading-tight securitytitle">
+              <h3 className="text-3xl font-semibold leading-tight font-weight-bold securitytitle">
                 Effortless semantics for policy definitions
               </h3>
-              <p className="mt-2 font-light securitydes">
+              <p className="mt-2 font-light font-weight-normal securitydes">
                 KubeArmor provides the ability to monitor the life cycles of containers' processes
                 and take policy decisions based on them.
               </p>
