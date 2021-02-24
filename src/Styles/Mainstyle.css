@@ -1029,14 +1029,15 @@ header {
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-  background-color: #56ccf2;
-  color: #fff;
+  background-color: #56ccf2 !important;
+  color: #fff !important;
   width: 100%;
   border-radius: 3px;
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
 }
+
 a {
   text-decoration: none;
   color: black;
