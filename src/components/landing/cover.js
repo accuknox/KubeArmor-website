@@ -7,14 +7,16 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 const Cover = () => {
   const query = useStaticQuery(graphql`
     query {
-      button: file(relativePath: { eq: "Cover/github.png" }) {
+
+      button: file(relativePath: { eq: "Cover/Slack.png" }) {
+
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      coverbg: file(relativePath: { eq: "Cover/coverkubearmor1.png" }) {
+      cover: file(relativePath: { eq: "Cover/Cover image.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,40 +26,17 @@ const Cover = () => {
     }
   `);
   return (
-    <div className="covercontent">
+    <div>
       {/* <Header /> */}
       <section className="pt-40 pb-40 md:pt-40 md:pb-40 ">
-        <div className="container mx-auto px-8 lg:flex">
-          <div className="lg:w-1/2">
-            {/* <Img
-              fluid={query.coverbg.childImageSharp.fluid}
-              alt="Button Icon"
-              className="Coverbutton"
-              style={{ height: '100%', width: '85%' }}
-            /> */}
-          </div>
-          <div className="lg:text-left lg:w-1/2">
-            <p className="coverletter" style={{ paddingBottom: '20px' }}>
-              KubeArmor
-            </p>
-            <h2 className="text-4xl lg:text-5xl  leading-none covertitle">
-              K8s-native System Policy Audit/Alert & Enforcement Engine
-            </h2>
-            <p className=" mt-6 font-light coverdes">
-              What if you “think” you don’t know enough about your topic? Then, do some research.
-              Read books and magazines. Do some searches on the Internet. Who knows?
-            </p>
-            {/* <p className="mt-8 md:mt-12">
-              <Button size="lg">
-                Find us on github{' '}
-                <Img fluid={query.button.childImageSharp.fluid} alt="Cover Page" />
-              </Button>
-            </p> */}
-
-            <Button className="mt-8 md:mt-12" size="lg">
+        <div className="container row mx-auto px-8 lg:flex text-center justify-content-center">
+          <h1 className="pb-3 font-weight-bold text-center justify-between items-center">
+            KubeArmor is a container-aware runtime security enforcement system
+          </h1>
+          <a href="https://kubearmor.herokuapp.com/" target="_blank">
+            <button className="slackbutton " size="sm">
               <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <div>Find us on github</div>
-                <div style={{ paddingLeft: '10px' }}>
+                <div>
                   <Img
                     fluid={query.button.childImageSharp.fluid}
                     alt="Button Icon"
@@ -65,9 +44,18 @@ const Cover = () => {
                     style={{ width: '20px', background: '#00B6F0' }}
                   />
                 </div>
+                <div style={{ marginLeft: '10px' }}>Join Our Slack</div>
               </div>
-            </Button>
+            </button>
+          </a>
+          <div className="col-lg-12 pt-2">
+            <Img fluid={query.cover.childImageSharp.fluid} />
           </div>
+          <p className="font-weight-normal" style={{ color: '#333333' }}>
+            KubeArmor is a container-aware runtime security enforcement system that restricts the
+            behavior (such as process execution, file access, networking operation, and resource
+            utilization) of containers at the system level.
+          </p>
         </div>
       </section>
     </div>

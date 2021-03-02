@@ -102,9 +102,6 @@
 .Coverbutton {
   width: 24px;
   height: 24px;
-  background-color: #dedede;
-  background-blend-mode: multiply !important;
-  border-radius: 4px;
 }
 .featureelements {
   font-weight: 800;
@@ -126,4 +123,56 @@
   background-size: 89%;
   background-position: center 67%;
   background-repeat: no-repeat;
+}
+.keyfeaturetitle {
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.Keyfeaturesdes {
+  color: #828282;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+.Videocards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.footerlogocollection {
+  display: flex;
+  justify-content: center;
+}
+.footerlogocollection > div {
+  background-color: #000000;
+  padding: 10px;
+  margin-left: 15px;
+}
+.footersociallogo {
+  width: 16.59px;
+  height: 10.61px;
+}
+.demopoliciescard {
+  background: #fcfcfc;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
+}
+.demopoliciescard > p {
+  color: #828282;
+}
+.demopoliciescard > p > span {
+  color: black;
+}
+.Keyfeatureicon {
+  padding: 12px;
+  background-color: #eff2f6;
+  border-radius: 100%;
+}
+.Featurekeycards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

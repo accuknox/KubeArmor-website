@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 /* !
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'),
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+      format('woff2');
+}
+* {
+  font-family: 'Product Sans';
+}
 .container {
   width: 100%;
   padding-right: 15px;
@@ -1034,11 +1048,253 @@ header {
   width: 100%;
   border-radius: 3px;
 }
-.navbar-light .navbar-nav .nav-item .nav-link {
-  padding: 5px 20px;
+/* .navbar-light .navbar-nav .nav-item .nav-link {
+  padding: 5px 15px;
+} */
+.gutter-1 {
+  margin: -5px;
 }
+.gutter-1 > * {
+  margin-bottom: 0 !important;
+  padding: 5px;
+}
+
+.gutter-2 {
+  margin: -10px;
+}
+.gutter-2 > * {
+  margin-bottom: 0 !important;
+  padding: 10px;
+}
+
+.gutter-3 {
+  margin: -15px;
+}
+.gutter-3 > * {
+  margin-bottom: 0 !important;
+  padding: 15px;
+}
+
+.gutter-4 {
+  margin: -20px;
+}
+.gutter-4 > * {
+  margin-bottom: 0 !important;
+  padding: 20px;
+}
+
+.gutter-5 {
+  margin: -25px;
+}
+.gutter-5 > * {
+  margin-bottom: 0 !important;
+  padding: 25px;
+}
+
+@media (min-width: 576px) {
+  .gutter-sm-1 {
+    margin: -5px;
+  }
+  .gutter-sm-1 > * {
+    margin-bottom: 0 !important;
+    padding: 5px;
+  }
+  .gutter-sm-2 {
+    margin: -10px;
+  }
+  .gutter-sm-2 > * {
+    margin-bottom: 0 !important;
+    padding: 10px;
+  }
+  .gutter-sm-3 {
+    margin: -15px;
+  }
+  .gutter-sm-3 > * {
+    margin-bottom: 0 !important;
+    padding: 15px;
+  }
+  .gutter-sm-4 {
+    margin: -20px;
+  }
+  .gutter-sm-4 > * {
+    margin-bottom: 0 !important;
+    padding: 20px;
+  }
+  .gutter-sm-5 {
+    margin: -25px;
+  }
+  .gutter-sm-5 > * {
+    margin-bottom: 0 !important;
+    padding: 25px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .gutter-md-1 {
+    margin: -5px;
+  }
+  .gutter-md-1 > * {
+    margin-bottom: 0 !important;
+    padding: 5px;
+  }
+  .gutter-md-2 {
+    margin: -10px;
+  }
+  .gutter-md-2 > * {
+    margin-bottom: 0 !important;
+    padding: 10px;
+  }
+  .gutter-md-3 {
+    margin: -15px;
+  }
+  .gutter-md-3 > * {
+    margin-bottom: 0 !important;
+    padding: 15px;
+  }
+  .gutter-md-4 {
+    margin: -20px;
+  }
+  .gutter-md-4 > * {
+    margin-bottom: 0 !important;
+    padding: 20px;
+  }
+  .gutter-md-5 {
+    margin: -25px;
+  }
+  .gutter-md-5 > * {
+    margin-bottom: 0 !important;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gutter-lg-1 {
+    margin: -5px;
+  }
+  .gutter-lg-1 > * {
+    margin-bottom: 0 !important;
+    padding: 5px;
+  }
+  .gutter-lg-2 {
+    margin: -10px;
+  }
+  .gutter-lg-2 > * {
+    margin-bottom: 0 !important;
+    padding: 10px;
+  }
+  .gutter-lg-3 {
+    margin: -15px;
+  }
+  .gutter-lg-3 > * {
+    margin-bottom: 0 !important;
+    padding: 15px;
+  }
+  .gutter-lg-4 {
+    margin: -20px;
+  }
+  .gutter-lg-4 > * {
+    margin-bottom: 0 !important;
+    padding: 20px;
+  }
+  .gutter-lg-5 {
+    margin: -25px;
+  }
+  .gutter-lg-5 > * {
+    margin-bottom: 0 !important;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .gutter-xl-1 {
+    margin: -5px;
+  }
+  .gutter-xl-1 > * {
+    margin-bottom: 0 !important;
+    padding: 5px;
+  }
+  .gutter-xl-2 {
+    margin: -10px;
+  }
+  .gutter-xl-2 > * {
+    margin-bottom: 0 !important;
+    padding: 10px;
+  }
+  .gutter-xl-3 {
+    margin: -15px;
+  }
+  .gutter-xl-3 > * {
+    margin-bottom: 0 !important;
+    padding: 15px;
+  }
+  .gutter-xl-4 {
+    margin: -20px;
+  }
+  .gutter-xl-4 > * {
+    margin-bottom: 0 !important;
+    padding: 20px;
+  }
+  .gutter-xl-5 {
+    margin: -25px;
+  }
+  .gutter-xl-5 > * {
+    margin-bottom: 0 !important;
+    padding: 25px;
+  }
+}
+
+.gutter-0 {
+  padding: 1px 1px 0 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.gutter-0 > * {
+  padding: 0;
+  margin: -1px -1px 0 0 !important;
+}
+
+.gutter-1 [class*='-double']::before {
+  padding-top: calc(200% + 10px);
+}
+
+.gutter-2 [class*='-double']::before {
+  padding-top: calc(200% + 20px);
+}
+
+.gutter-3 [class*='-double']::before {
+  padding-top: calc(200% + 30px);
+}
+
 
 a {
   text-decoration: none;
   color: black;
+}
+.LogoButton {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(180deg, #fafafa 0%, #e7e7e7 100%);
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: black !important;
+}
+.LogoButton div {
+  justify-content: center;
+}
+.slackbutton {
+  width: 230px;
+  height: 40px;
+  background: linear-gradient(
+    360deg,
+    rgba(234, 234, 234, 0.88) -4.27%,
+    rgba(250, 250, 250, 0) 104.58%
+  );
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.slackbutton div {
+  justify-content: center;
 }
