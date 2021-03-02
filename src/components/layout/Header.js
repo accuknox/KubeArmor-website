@@ -32,6 +32,7 @@ const Header = () => {
       {' '}
       <div className="px-8">
         <Navbar bg="white" expand="lg" class="navbar navbar-expand-lg  navbar-light items-center">
+
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
             <div className="w-12"></div>
             <Link to="/">
@@ -74,6 +75,7 @@ const Header = () => {
                   setCount(0);
                 }}
               >
+
                 <a className="nav-link" href="#features">
                   Overview
                 </a>
@@ -89,6 +91,7 @@ const Header = () => {
                 <a className="nav-link" href="#services">
                   Blog
                 </a>
+
               </Nav.Link>
               <Nav.Link
                 as="li"
@@ -145,6 +148,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Navbar>
       </div>
+
     </header>
   );
 };

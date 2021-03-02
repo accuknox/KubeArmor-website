@@ -7,7 +7,9 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 const Cover = () => {
   const query = useStaticQuery(graphql`
     query {
+
       button: file(relativePath: { eq: "Cover/Slack.png" }) {
+
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -39,6 +41,7 @@ const Cover = () => {
                     fluid={query.button.childImageSharp.fluid}
                     alt="Button Icon"
                     className="Coverbutton"
+                    style={{ width: '20px', background: '#00B6F0' }}
                   />
                 </div>
                 <div style={{ marginLeft: '10px' }}>Join Our Slack</div>
