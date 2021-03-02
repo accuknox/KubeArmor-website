@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql, Link } from 'gatsby';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
+  const [count, setCount] = useState(0);
   const query = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "Header/Group.png" }) {
+      logo: file(relativePath: { eq: "Cover/KubeArmor Logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      button: file(relativePath: { eq: "Header/Vector.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,89 +29,122 @@ const Header = () => {
 
   return (
     <header className="top-0 bg-white">
-      {/* sticky bg-white */}
+      {' '}
       <div className="px-8">
-        <nav class="navbar navbar-expand-lg  navbar-light items-center">
-          <div className="w-12"></div>
-          <Img
-            fluid={query.logo.childImageSharp.fluid}
-            alt="Logo"
-            style={{
-              width: '40px',
-              border: '5px solid #56CCF2',
-              background: '#56CCF2',
-              borderRadius: '50%'
-            }}
-          />
-          <b className="navbar-brand">KubeArmor</b>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ml-lg-auto">
-              <li class="nav-item active">
+        <Navbar bg="white" expand="lg" class="navbar navbar-expand-lg  navbar-light items-center">
+          <Navbar.Brand href="/" style={{ display: 'flex' }}>
+            <div className="w-12"></div>
+            <Link to="/">
+              <Img
+                fluid={query.logo.childImageSharp.fluid}
+                alt="Logo"
+                style={{
+                  width: '200px',
+                  height: '50px'
+                }}
+              />
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" class="collapse navbar-collapse">
+            <Nav>
+              <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
+                <button className="LogoButton" size="sm">
+                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank">
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                      <div>
+                        <Img
+                          fluid={query.button.childImageSharp.fluid}
+                          alt="Button Icon"
+                          className="Coverbutton"
+                        />
+                      </div>
+                      <div style={{ marginLeft: '10px' }}>Github</div>
+                    </div>
+                  </a>
+                </button>
+              </Nav.Link>
+            </Nav>
+            <Nav as="ul" className="navbar-nav ml-md-auto">
+              <Nav.Link
+                as="li"
+                href="#features"
+                className={count === 0 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(0);
+                }}
+              >
                 <a className="nav-link" href="#features">
-                  Enterprise
+                  Overview
                 </a>
-              </li>
-              <li class="nav-item">
+              </Nav.Link>
+              <Nav.Link
+                as="li"
+                href="#services"
+                className={count === 1 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(1);
+                }}
+              >
                 <a className="nav-link" href="#services">
                   Blog
                 </a>
-              </li>
-              <li class="nav-item">
-                <a className="nav-link" href="https://kubearmor.herokuapp.com/" target="_blank">
-                  Slag
+              </Nav.Link>
+              <Nav.Link
+                as="li"
+                href="#videos"
+                className={count === 2 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(2);
+                }}
+              >
+                <a className="nav-link" href="#videos">
+                  Videos
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Documentation</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              </Nav.Link>
+              <Nav.Link
+                as="li"
+                href="#roadmap"
+                className={count === 3 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(3);
+                }}
+              >
+                <a className="nav-link" href="#roadmap">
+                  Roadmap
+                </a>
+              </Nav.Link>
+              <Nav.Link
+                as="li"
+                href="#"
+                className={count === 4 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(4);
+                }}
+              >
+                <a className="nav-link">Help</a>
+              </Nav.Link>
+              <Nav.Link
+                as="li"
+                href="https://kubearmor.gitbook.io/kubearmor/"
+                target="_blank"
+                className={count === 5 ? 'nav-item active' : 'nav-item'}
+                onClick={e => {
+                  setCount(5);
+                }}
+              >
+                <a
+                  className="nav-link"
+                  href="https://kubearmor.gitbook.io/kubearmor/"
+                  target="_blank"
+                >
+                  Documentation
+                </a>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
-      {/* <div className="flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-        <div className="flex items-center text-2xl">
-          <div className="w-12 mr-3">
-            <LogoIcon />
-            <Img
-              fluid={query.logo.childImageSharp.fluid}
-              alt="Logo"
-              style={{
-                width: '40px',
-                border: '5px solid #56CCF2',
-                background: '#56CCF2',
-                borderRadius: '50%'
-              }}
-            />
-          </div>
-          <b>KubeArmor</b>
-        </div>
-        <div className="flex mt-4 sm:mt-0 px-6">
-          <AnchorLink className="px-3" href="#features">
-            <Button size="sm"> Enterprise</Button>
-          </AnchorLink>
-          <AnchorLink className="px-3 mt-2" href="#services">
-            Blog
-          </AnchorLink>
-          <a className="px-3 mt-2" href="https://kubearmor.herokuapp.com/" target="_blank">
-            Slack
-          </a>
-          <AnchorLink className="px-1 mt-2" href="">
-            Documentation
-          </AnchorLink>
-        </div>
-      </div> */}
     </header>
   );
 };
