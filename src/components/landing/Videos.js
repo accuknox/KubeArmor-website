@@ -23,12 +23,9 @@ const Videos = () => {
   `);
   return (
     <div>
-      <section id="videos" className="pt-20 pb-20">
+      <section id="videos" className="pt-20 pb-10">
         <div className="container mx-auto ">
-          <h1
-            className=" text-center justify-between items-center font-weight-bold"
-            style={{ color: '#082D75' }}
-          >
+          <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
             Videos
           </h1>{' '}
           <div className="row gutter-5 pt-5">

@@ -1284,13 +1284,8 @@ a {
 .slackbutton {
   width: 230px;
   height: 40px;
-  background: linear-gradient(
-    360deg,
-    rgba(234, 234, 234, 0.88) -4.27%,
-    rgba(250, 250, 250, 0) 104.58%
-  );
-  border: 1px solid #d4d4d4;
-  box-sizing: border-box;
+  background: #ee3465;
+  color: #ffffff;
   border-radius: 8px;
 }
 .slackbutton div {
