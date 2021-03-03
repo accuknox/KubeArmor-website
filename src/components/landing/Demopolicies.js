@@ -2,6 +2,10 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import Demopolicies1 from '../Demopolicies/Demopolicies1';
+import Demopolicies2 from '../Demopolicies/Demopolicies2';
+import Demopolicies3 from '../Demopolicies/Demopolicies3';
+import Demopolicies4 from '../Demopolicies/Demopolicies4';
+import Demopoliciesbottom from '../Demopolicies/Demopoliciesbottom';
 
 const Demopolicies = () => {
   const query = useStaticQuery(graphql`
@@ -30,10 +34,21 @@ const Demopolicies = () => {
             KubeArmor Demo Policies
           </h1>
           <div className="row pt-5">
-            <div className="col-lg-12 col-md-12">
+            {/* <div className="col-lg-12 col-md-12">
               <Img fluid={query.demopolicies.childImageSharp.fluid} alt="Feature" />
+            </div> */}
+            <div className="col-lg-4 col-md-4 ">
+              <Demopolicies1 />
+              <br />
+              <Demopolicies2 />
+            </div>
+            <div className="col-lg-8 col-md-8 ">
+              <Demopolicies3 />
+              <br />
+              <Demopolicies4 />
             </div>
           </div>
+          <Demopoliciesbottom />
         </div>
       </section>
     </div>
