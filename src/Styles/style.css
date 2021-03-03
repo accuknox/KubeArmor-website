@@ -160,11 +160,8 @@
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
   border-radius: 7px;
 }
-.demopoliciescard > p {
+.demopoliciestext > p {
   color: #828282;
-}
-.demopoliciescard > p > span {
-  color: black;
 }
 .Keyfeatureicon {
   padding: 12px;
