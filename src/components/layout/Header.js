@@ -29,10 +29,8 @@ const Header = () => {
 
   return (
     <header className="top-0 bg-white">
-      {' '}
       <div className="px-8">
         <Navbar bg="white" expand="lg" class="navbar navbar-expand-lg  navbar-light items-center">
-
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
             <div className="w-12"></div>
             <Link to="/">
@@ -48,50 +46,27 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" class="collapse navbar-collapse">
-            <Nav>
-              <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
-                <button className="LogoButton" size="sm">
-                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank">
-                    <div style={{ display: 'flex', flexDirection: 'row' }}>
-                      <div>
-                        <Img
-                          fluid={query.button.childImageSharp.fluid}
-                          alt="Button Icon"
-                          className="Coverbutton"
-                        />
-                      </div>
-                      <div style={{ marginLeft: '10px' }}>Github</div>
-                    </div>
-                  </a>
-                </button>
-              </Nav.Link>
-            </Nav>
             <Nav as="ul" className="navbar-nav ml-md-auto">
               <Nav.Link
                 as="li"
-                href="#features"
+                href="#"
                 className={count === 0 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(0);
                 }}
               >
-
-                <a className="nav-link" href="#features">
+                <a className="nav-link" href="#">
                   Overview
                 </a>
               </Nav.Link>
               <Nav.Link
                 as="li"
-                href="#services"
                 className={count === 1 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(1);
                 }}
               >
-                <a className="nav-link" href="#services">
-                  Blog
-                </a>
-
+                <a className="nav-link">Blog</a>
               </Nav.Link>
               <Nav.Link
                 as="li"
@@ -119,21 +94,11 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
-                href="#"
+                href="https://kubearmor.gitbook.io/kubearmor/"
+                target="_blank"
                 className={count === 4 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(4);
-                }}
-              >
-                <a className="nav-link">Help</a>
-              </Nav.Link>
-              <Nav.Link
-                as="li"
-                href="https://kubearmor.gitbook.io/kubearmor/"
-                target="_blank"
-                className={count === 5 ? 'nav-item active' : 'nav-item'}
-                onClick={e => {
-                  setCount(5);
                 }}
               >
                 <a
@@ -144,11 +109,28 @@ const Header = () => {
                   Documentation
                 </a>
               </Nav.Link>
+            </Nav>{' '}
+            <Nav>
+              <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
+                <button className="LogoButton" size="sm">
+                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank">
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                      <div>
+                        <Img
+                          fluid={query.button.childImageSharp.fluid}
+                          alt="Button Icon"
+                          className="Coverbutton"
+                        />
+                      </div>
+                      <div style={{ marginLeft: '10px' }}>Github</div>
+                    </div>
+                  </a>
+                </button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </div>
-
     </header>
   );
 };

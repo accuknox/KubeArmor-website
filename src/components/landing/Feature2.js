@@ -52,27 +52,25 @@ const Feature2 = () => {
   `);
   return (
     <div>
-      <section id="stats" className="pt-20 pb-20" style={{ background: '#D7EBFA' }}>
+      <section id="stats" className="pt-20 pb-10">
         <div className="container mx-auto ">
-          <h1
-            className="font-weight-bold text-center justify-between items-center"
-            style={{ color: '#18214D' }}
-          >
+          {/* text-center justify-between items-center */}
+          <h1 className="font-weight-bold " style={{ color: '#18214D' }}>
             Key Features
           </h1>
 
           <div className="row pt-5 gutter-5">
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f1.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Support network security enforcement among containers"
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
                 Support network security enforcement among containers
               </h5>
               <p className="Keyfeaturesdes">
@@ -81,16 +79,16 @@ const Feature2 = () => {
               </p>
             </div>
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f2.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Provide easy-to-use semantics for policy definitions"
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
                 Provide easy-to-use semantics for policy definitions
               </h5>
               <p className="Keyfeaturesdes">
@@ -99,16 +97,16 @@ const Feature2 = () => {
               </p>
             </div>
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f3.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Enforce security policies to containers in runtime"
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
                 Enforce security policies to containers in runtime
               </h5>
               <p className="Keyfeaturesdes">
@@ -117,32 +115,34 @@ const Feature2 = () => {
               </p>
             </div>
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f4.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Effortless semantics for policy definitions"
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">Effortless semantics for policy definitions</h5>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Effortless semantics for policy definitions
+              </h5>
               <p className="Keyfeaturesdes">
                 KubeArmor provides the ability to monitor the life cycles of containers' processes
                 and take policy decisions based on them.
               </p>
             </div>{' '}
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f5.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Produce container-aware audit logs"
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
                 Enforce security policies to containers in runtime
               </h5>
               <p className="Keyfeaturesdes">
@@ -151,16 +151,16 @@ const Feature2 = () => {
               </p>
             </div>{' '}
             <div className="col-lg-4 col-md-4">
-              <div className="Featurekeycards">
-                <div className="Keyfeatureicon">
+              <div className="Featurekeycards pb-3">
+                <div>
                   <Img
                     fluid={query.f6.childImageSharp.fluid}
-                    alt="Feature"
-                    style={{ width: '24px' }}
+                    alt="Provide k8s-native engine                    "
+                    style={{ width: '40px' }}
                   />
                 </div>
               </div>
-              <h5 className=" keyfeaturetitle pb-3">Provide k8s-native engine</h5>
+              <h5 className=" keyfeaturetitle pb-3 font-weight-bold">Provide k8s-native engine</h5>
               <p className="Keyfeaturesdes">
                 K8s-operator for system-wide security policies . Linux Security Modules (LSMs) for
                 policy enforcement
