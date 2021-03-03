@@ -26,6 +26,7 @@ const Cover = () => {
   return (
     <div>
       {/* <Header /> */}
+
       <section className="pt-40 pb-30 md:pt-40 md:pb-30 ">
         <div className="container row mx-auto px-8 lg:flex ">
           <div className="row">

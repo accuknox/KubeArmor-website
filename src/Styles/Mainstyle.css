@@ -1129,6 +1129,7 @@ header {
   }
 }
 
+
 @media (min-width: 768px) {
   .gutter-md-1 {
     margin: -5px;
@@ -1264,6 +1265,7 @@ header {
 .gutter-3 [class*='-double']::before {
   padding-top: calc(200% + 30px);
 }
+
 
 a {
   text-decoration: none;
