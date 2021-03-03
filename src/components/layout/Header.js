@@ -29,10 +29,9 @@ const Header = () => {
 
   return (
     <header className="top-0 bg-white">
-      <div className="px-8">
+      <div className="px-3 container">
         <Navbar bg="white" expand="lg" class="navbar navbar-expand-lg  navbar-light items-center">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
-            <div className="w-12"></div>
             <Link to="/">
               <Img
                 fluid={query.logo.childImageSharp.fluid}

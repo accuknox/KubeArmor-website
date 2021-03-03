@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
+import Demopolicies1 from '../Demopolicies/Demopolicies1';
 
 const Demopolicies = () => {
   const query = useStaticQuery(graphql`
