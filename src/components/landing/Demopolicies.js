@@ -30,11 +30,8 @@ const Demopolicies = () => {
             KubeArmor Demo Policies
           </h1>
           <div className="row pt-5">
-            {/* <div className="col-lg-12 col-md-12">
+            <div className="col-lg-12 col-md-12">
               <Img fluid={query.demopolicies.childImageSharp.fluid} alt="Feature" />
-            </div> */}
-            <div className="col-lg-5 col-md-5 demopoliciescard">
-              <Demopolicies1 />
             </div>
           </div>
         </div>

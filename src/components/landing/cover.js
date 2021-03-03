@@ -29,7 +29,7 @@ const Cover = () => {
 
       <section className="pt-40 pb-30 md:pt-40 md:pb-30 ">
         <div className="container row mx-auto px-8 lg:flex ">
-          <div className="row">
+          <div className="row ">
             <div className="col-lg-6 col-md-6 pb-5">
               <h1
                 className="pb-5 font-weight-bold text-left justify-between items-center"

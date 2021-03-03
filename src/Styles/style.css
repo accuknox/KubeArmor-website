@@ -173,3 +173,28 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media (min-width: 576px) {
+  .Videoplayer {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .Videoplayer {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .Videoplayer {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (min-width: 1600px) {
+  .Videoplayer {
+    width: 620px;
+    height: 370px;
+  }
+}
