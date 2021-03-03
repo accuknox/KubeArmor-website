@@ -16,12 +16,9 @@ const Roadmap = () => {
   `);
   return (
     <div>
-      <section id="roadmap" className="pt-20 pb-10">
+      <section id="roadmap" className="pt-20">
         <div className="container mx-auto ">
-          <h1
-            className=" font-weight-bold text-center justify-between items-center"
-            style={{ color: '#082D75' }}
-          >
+          <h1 className=" font-weight-bold pb-5" style={{ color: '#082D75' }}>
             Roadmap
           </h1>
           <Img fluid={query.roadmap.childImageSharp.fluid} alt="Roadmap" />

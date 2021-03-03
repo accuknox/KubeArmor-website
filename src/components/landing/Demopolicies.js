@@ -12,7 +12,7 @@ const Demopolicies = () => {
           }
         }
       }
-      demopolicies: file(relativePath: { eq: "Demopolicies/Demo.png" }) {
+      demopolicies: file(relativePath: { eq: "Demopolicies/DemoPolicies.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -23,12 +23,9 @@ const Demopolicies = () => {
   `);
   return (
     <div>
-      <section id="stats" className="pt-20 pb-20" style={{ background: '#D7EBFA' }}>
+      <section id="stats" className="pt-20 pb-10">
         <div className="container mx-auto ">
-          <h1
-            className=" font-weight-bold text-center justify-between items-center"
-            style={{ color: '#082D75' }}
-          >
+          <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
             KubeArmor Demo Policies
           </h1>
           <div className="row pt-5">
