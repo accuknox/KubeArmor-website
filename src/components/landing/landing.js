@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from './Blog';
 import Challenges from './Challenges';
 import Cover from './cover';
 import Demopolicies from './Demopolicies';
@@ -18,6 +19,7 @@ const Landing = () => {
       {/* <Elementfeature /> */}
       <Feature2 />
       <Videos />
+      <Blog />
       <Demopolicies />
       <Roadmap />
       {/* <Challenges /> */}

@@ -215,7 +215,9 @@
 }
 .demopoliciescard p {
   font-size: smaller;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1;
 }
 .dpfontsize {
-  font-size: smaller;
+  font-size: x-small !important;
 }
