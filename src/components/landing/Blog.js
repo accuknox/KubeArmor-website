@@ -15,7 +15,7 @@ const Blog = () => {
               <div className="col-lg-8 col-md-8  pt-4">
                 <div className="card kbm-card ">
                   <a
-                    href="https://github.com/accuknox/backend/blob/master/blogs/Intro_to_LSMs.rst"
+                    href="https://github.com/nyrahul/src/blob/master/docs/blogs/Intro_to_LSMs.rst"
                     target="_blank"
                   >
                     <div className="card-header font-weight-bold">
