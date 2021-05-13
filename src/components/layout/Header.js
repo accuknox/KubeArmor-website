@@ -60,12 +60,13 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
+	              href="#blog"
                 className={count === 1 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(1);
                 }}
               >
-                <a className="nav-link">Blog</a>
+                <a className="nav-link" href="#blog">Blog</a>
               </Nav.Link>
               <Nav.Link
                 as="li"

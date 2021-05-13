@@ -21,27 +21,27 @@ const Demopoliciesbottom = () => {
         </div>
         <div className="col-lg-4 col-md-4 ">
           <div className="dpbuttontype2 text-center justify-between items-center">
+            <p className="font-weight-bold p-5">App Credentials in Config Files </p>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 ">
+          <div className="dpbuttontype2 text-center justify-between items-center">
+            <p className="font-weight-bold p-5">App Credentials in Config Files </p>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 ">
+          <div className="dpbuttontype2 text-center justify-between items-center">
+            <p className="font-weight-bold p-5">Bash/Command inside Containers</p>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 ">
+          <div className="dpbuttontype2 text-center justify-between items-center">
             <p className="font-weight-bold p-5">Access Cloud Resources</p>
           </div>
         </div>
         <div className="col-lg-4 col-md-4 ">
           <div className="dpbuttontype2 text-center justify-between items-center">
-            <p className="font-weight-bold p-5">App Credentials in config files </p>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-4 ">
-          <div className="dpbuttontype2 text-center justify-between items-center">
-            <p className="font-weight-bold p-5">bash/cmd inside container</p>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-4 ">
-          <div className="dpbuttontype2 text-center justify-between items-center">
-            <p className="font-weight-bold p-5">App Credentials in config files </p>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-4 ">
-          <div className="dpbuttontype2 text-center justify-between items-center">
-            <p className="font-weight-bold p-5">Access Container service account</p>
+            <p className="font-weight-bold p-5">Access Service Account</p>
           </div>
         </div>
       </div>
