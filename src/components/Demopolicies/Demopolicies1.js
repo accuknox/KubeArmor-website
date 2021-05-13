@@ -13,8 +13,8 @@ const Demopolicies1 = () => {
       <p className="demopoliciesblack" style={{ marginLeft: '15px', marginBottom: '10px' }}>selector:</p>
       <p className="demopoliciesblack" style={{ marginLeft: '30px', marginBottom: '10px' }}>matchLabels:</p>
       <p className="demopoliciesblack" style={{ marginLeft: '50px', marginBottom: '10px' }}>app: wordpress</p>
-      <p className="demopoliciesblack" style={{ marginLeft: '15px', marginBottom: '10px' }}>file:</p>
-      <p className="demopoliciesblack" style={{ marginLeft: '30px', marginBottom: '10px' }}>matchPaths:</p>
+      <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#D70000' }}>file:</p>
+      <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#D70000' }}>matchPaths:</p>
       <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#D70000' }}>- path: /var/www/html/wp-config.php</p>
       <p style={{ marginLeft: '45px', marginBottom: '10px', color: '#D70000' }}>fromSource:</p>
       <p style={{ marginLeft: '45px', marginBottom: '10px', color: '#D70000' }}>- path: /usr/sbin/apache2</p>

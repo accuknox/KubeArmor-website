@@ -13,8 +13,8 @@ const Demopolicies2 = () => {
       <p className="demopoliciesblack" style={{ marginLeft: '15px', marginBottom: '10px' }}>selector:</p>
       <p className="demopoliciesblack" style={{ marginLeft: '30px', marginBottom: '10px' }}>matchLabels:</p>
       <p className="demopoliciesblack" style={{ marginLeft: '50px', marginBottom: '10px' }}>app: mysql</p>
-      <p className="demopoliciesblack" style={{ marginLeft: '15px', marginBottom: '10px' }}>file:</p>
-      <p className="demopoliciesblack" style={{ marginLeft: '30px', marginBottom: '10px' }}>matchDirectories:</p>
+      <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#D70000' }}>file:</p>
+      <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#D70000' }}>matchDirectories:</p>
       <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#D70000' }}>- dir: /var/lib/mysql/</p>
       <p style={{ marginLeft: '45px', marginBottom: '10px', color: '#D70000' }}>recursive: true</p>
       <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#D70000' }}>action: Audit</p>
