@@ -31,18 +31,15 @@ const Demopolicies = () => {
       <section id="stats" className="pt-20 pb-10">
         <div className="container mx-auto ">
           <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
-            KubeArmor Demo Policies
+            Sample Policies
           </h1>
           <div className="row pt-5">
-            {/* <div className="col-lg-12 col-md-12">
-              <Img fluid={query.demopolicies.childImageSharp.fluid} alt="Feature" />
-            </div> */}
-            <div className="col-lg-4 col-md-4 ">
+            <div className="col-lg-6 col-md-4 ">
               <Demopolicies1 />
               <br />
               <Demopolicies2 />
             </div>
-            <div className="col-lg-8 col-md-8 ">
+            <div className="col-lg-6 col-md-4 ">
               <Demopolicies3 />
               <br />
               <Demopolicies4 />

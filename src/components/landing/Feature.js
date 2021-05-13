@@ -1,19 +1,47 @@
 import React from 'react';
-import Card from '../Card';
+import LabelText from '../LabelText';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import SplitSection from '../SplitSection';
+
 const Feature = () => {
   const query = useStaticQuery(graphql`
     query {
-      feature1: file(relativePath: { eq: "landing/land1.png" }) {
+      f1: file(relativePath: { eq: "Features/Feature2.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      cloudy: file(relativePath: { eq: "landing/cloudy.png" }) {
+      f2: file(relativePath: { eq: "Features/Feature3.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      f3: file(relativePath: { eq: "Features/Feature5.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      f4: file(relativePath: { eq: "Features/Feature4.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      f5: file(relativePath: { eq: "Features/Feature1.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      f6: file(relativePath: { eq: "Features/Feature6.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -22,100 +50,130 @@ const Feature = () => {
       }
     }
   `);
-
   return (
-    <div style={{ backgroundColor: '#DAFDFF' }}>
-      <section className="py-10 container">
-        <section className="py-20 container">
-          <div className="container mx-auto">
-            <div className="col-4">
-              <h1 className="text-3xl font-bold leading-tight featureelements text-left">
-                Design elements /features’
-              </h1>
+    <div>
+      <section id="overview" className="pt-20 pb-10">
+        <div className="container mx-auto ">
+          {/* text-center justify-between items-center */}
+          <h1 className="font-weight-bold " style={{ color: '#18214D' }}>
+            Key Features
+          </h1>
+
+          <div className="row pt-5 gutter-5">
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f1.childImageSharp.fluid}
+                    alt="Restrict the behavior of containers at the system level"
+                    style={{ width: '40px' }}
+                  />
+                </div>
+              </div>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Restrict the behavior of containers at the system level
+              </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor provides the ability to filter process executions, 
+                file accesses, networking operations, and resource utilization inside 
+                containers at the system level.
+              </p>
             </div>
-            <div
-              className="flex flex-col md:flex-row  md:-mx-3 lg:px-20"
-              style={{ marginTop: '-70px' }}
-            >
-              <div
-                className="w-full sm:w-1/2 text-right"
-                style={{ padding: '10px', marginTop: '100px' }}
-              >
-                <Card className="featurecard text-left">
-                  <div className="mb-8" style={{ display: 'flex', flexDirection: 'row' }}>
-                    <div>
-                      <Img
-                        fluid={query.feature1.childImageSharp.fluid}
-                        alt="Feature"
-                        style={{ width: '50px' }}
-                      />
-                    </div>
-                    <div style={{ paddingLeft: '10px' }}>
-                      <p className="font-bold text-xl">Provide k8s-native engine</p>
-                    </div>
-                  </div>
-                  <ul style={{ listStyleType: 'disc' }}>
-                    <li className="featurelist">K8s-operator for system-wide security policies</li>
-                    <li className="featurelist">K8s-native YAML policy specification</li>
-                    <li className="featurelist">
-                      Linux Security Modules (LSMs) for policy enforcement
-                    </li>
-                    <li className="featurelist">
-                      eBPF engine to couple audit info with k8s-metadata
-                    </li>
-                  </ul>
-                </Card>
-              </div>
-              <div className="w-full sm:w-1/2" style={{ padding: '10px' }}>
-                <div className="mb-3">
-                  <Card className="featurecard">
-                    <div className="mb-8" style={{ display: 'flex', flexDirection: 'row' }}>
-                      <div>
-                        <Img
-                          fluid={query.cloudy.childImageSharp.fluid}
-                          alt="Feature"
-                          style={{ width: '50px' }}
-                        />
-                      </div>
-                      <div style={{ paddingLeft: '10px' }}>
-                        <p className="font-bold text-xl">Handle cloud provider</p>
-                      </div>
-                    </div>
-                    <ul style={{ listStyleType: 'disc' }}>
-                      <li className="featurelist">
-                        GKE: Container-optimized OS (COS) ships with AppArmor
-                      </li>
-                      <li className="featurelist">EKS: Amazon Linux 2 ships with SELinux</li>
-                    </ul>
-                  </Card>
-                </div>
-
-                <div className="col-10" style={{ marginLeft: '-13px' }}>
-                  <Card className="featurecard ">
-                    <h5
-                      className="font-bold text-2xl"
-                      style={{
-                        color: '#3B76EF',
-                        marginBottom: '10px',
-                        marginTop: '-10px',
-                        fontFamily: 'georgia'
-                      }}
-                    >
-                      LSM
-                    </h5>
-
-                    <h3
-                      className="font-weight-bold font-style-normal"
-                      style={{ fontSize: '20px', lineHeight: '20px' }}
-                    >
-                      Handle LSM deployment complexity
-                    </h3>
-                  </Card>
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f2.childImageSharp.fluid}
+                    alt="Enforce security policies to containers in runtime"
+                    style={{ width: '40px' }}
+                  />
                 </div>
               </div>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Enforce security policies to containers in runtime
+              </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor directly enforces security policies into Linux Security 
+                Modules (LSMs) for each container based on the identities 
+                (e.g., labels) of given containers and security policies.
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f3.childImageSharp.fluid}
+                    alt="Produce container-aware alert logs against policy violations"
+                    style={{ width: '40px' }}
+                  />
+                </div>
+              </div>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Produce container-aware alert logs against policy violations.
+              </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor produces alert logs for policy violations that happen 
+                in containers by monitoring the operations of containers' processes
+                using its eBPF-based system monitor.
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f4.childImageSharp.fluid}
+                    alt="Provide effortless semantics for policy definitions"
+                    style={{ width: '40px' }}
+                  />
+                </div>
+              </div>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Provide effortless semantics for policy definitions
+              </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor manages internal complexities associated with LSMs and 
+                provides easy semantics for policy definitions.
+              </p>
+            </div>{' '}
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f5.childImageSharp.fluid}
+                    alt="Support network security enforcement among containers"
+                    style={{ width: '40px' }}
+                  />
+                </div>
+              </div>
+              <h5 className=" keyfeaturetitle font-weight-bold pb-3">
+                Support network security enforcement among containers
+              </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor allows applying policy settings at the level of network system calls, controlling
+                interactions among containers.
+              </p>
+            </div>{' '}
+            <div className="col-lg-4 col-md-4">
+              <div className="Featurekeycards pb-3">
+                <div>
+                  <Img
+                    fluid={query.f6.childImageSharp.fluid}
+                    alt="Provide Kubernetes-native security enforcement engine"
+                    style={{ width: '40px' }}
+                  />
+                </div>
+              </div>
+              <h5 className=" keyfeaturetitle pb-3 font-weight-bold">
+	              Provide Kubernetes-native security enforcement engine
+	             </h5>
+              <p className="Keyfeaturesdes">
+                KubeArmor allows operators to define security policies
+                based on Kubernetes metadata and simply apply them into 
+                Kubernetes.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
       </section>
     </div>
   );
