@@ -45,7 +45,7 @@ const Demopolicies = () => {
               <Demopolicies4 />
             </div>
           </div>
-          <Demopoliciesbottom />
+          {/* <Demopoliciesbottom /> */}
         </div>
       </section>
     </div>

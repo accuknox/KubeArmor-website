@@ -24,29 +24,17 @@ const Videos = () => {
   return (
     <div>
       <section id="videos" className="pt-20 pb-10">
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
             Videos
           </h1>
-	        <div className="row">
-            <div className="col-lg-6 col-md-4">
+	        <div className="row container mx-auto text-center justify-between items-center">
+            <div className="col-lg-12 col-md-12">
               <div className="Videoplayer mx-auto">
                 <iframe
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/NS8XC78wSME"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-4">
-              <div className="Videoplayer mx-auto">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/T32knFrf1XI"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
