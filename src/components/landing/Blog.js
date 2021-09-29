@@ -42,7 +42,7 @@ const Blog = () => {
                     </div>
                   </Link>
                   <div className="card-body font-weight-normal">
-                    <p style={{ textAlign: 'left' }}>
+                    <p className="text-left">
                       <h4>Kubernetes security</h4>
                       In recent times organizations are migrating from on-premise to cloud, owing to
                       the multi-dimensional nature of today’s cloud-native technology landscape. Due
@@ -62,7 +62,7 @@ const Blog = () => {
                     </div>
                   </Link>
                   <div className="card-body font-weight-normal">
-                    <p style={{ textAlign: 'left' }}>
+                    <p className="text-left">
                       KubeArmor, a container-aware runtime security enforcement system, developed by
                       Accuknox helps in auditing and blocking any malicious access performed on
                       containers. It not only restricts the behavior of the container at the system
