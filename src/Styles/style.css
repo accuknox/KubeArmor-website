@@ -181,24 +181,28 @@
   .Videoplayer {
     width: 600px;
     height: 350px;
+    padding: 1rem;
   }
 }
 @media (min-width: 768px) {
   .Videoplayer {
     width: 600px;
     height: 350px;
+    padding: 1rem;
   }
 }
 @media (min-width: 1200px) {
   .Videoplayer {
     width: 600px;
     height: 350px;
+    padding: 1rem;
   }
 }
 @media (min-width: 1600px) {
   .Videoplayer {
     width: 620px;
     height: 370px;
+    padding: 1rem;
   }
 }
 .dpbuttontype {

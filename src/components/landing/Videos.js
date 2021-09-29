@@ -28,13 +28,23 @@ const Videos = () => {
           <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
             Videos
           </h1>
-	        <div className="row container mx-auto text-center justify-between items-center">
+          <div className="row container mx-auto text-center justify-between items-center">
             <div className="col-lg-12 col-md-12">
               <div className="Videoplayer mx-auto">
                 <iframe
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/NS8XC78wSME"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div className="Videoplayer mx-auto">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/u1PpRsk03Ao"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
