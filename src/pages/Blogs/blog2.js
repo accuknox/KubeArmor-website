@@ -50,56 +50,44 @@ const Blog1 = () => {
                       >
                         Security policies
                       </a>
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu1}></img>
-                      <h4 style={{ marginTop: '1rem' }}>Example 1 - Block a process execution:</h4>
+                      <img className="w-100 pt-3" src={multiUbuntu1}></img>
+                      <h4 className="mt-3">Example 1 - Block a process execution:</h4>
                       In this example, the sleep command can be blocked by applying a security
                       policy. Let us see how it works before and after applying the security policy.
                       The picture below shows that the sleep command is working.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu2}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu2}></img>
                       This is the yaml policy to be applied to block the sleep command.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu3}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu3}></img>
                       To apply the policy the following command should be given. Here we can see
                       that the kubearmor ksp-group-1-proc-path-block.yaml policy is applied.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu4}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu4}></img>
                       To check if the sleep command is blocked, Execute sleep command inside the
                       ubuntu-1 pod. Replace the appropriate pod name for ubuntu 1.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu5}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu5}></img>
                       Here you can see the permission is denied. To check for audit logs, replace
                       KubeArmor in the node where ubuntu-1 is located.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu6}></img>
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu7}></img>
-                      <h4 style={{ marginTop: '1rem' }}>Example 2 - Block file access:</h4>
+                      <img className="w-100 pt-3" src={multiUbuntu6}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu7}></img>
+                      <h4 className="mt-3">Example 2 - Block file access:</h4>
                       Another example is to block a specific directory and the subdirectories. In
                       this example, the credentials directory contains sensitive information. Here
                       we can access the password text file and can view the username and password.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu8}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu8}></img>
                       Let us see how to apply a policy and how to block this directory. This is the
                       yaml policy to be applied to block access to sensitive information.
-                      <img style={{ width: '100%', paddingTop: '0.5rem' }} src={multiUbuntu9}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu9}></img>
                       To apply the policy the following command should be given. Here we can see
                       that the kubearmor ksp-ubuntu-5-file-dir-recursive-block.yaml policy is
                       applied.
-                      <img
-                        style={{ width: '100%', paddingTop: '0.5rem' }}
-                        src={multiUbuntu10}
-                      ></img>
+                      <img className="w-100 pt-3" src={multiUbuntu10}></img>
                       To check if the password text file is blocked, Let us try to access Access
                       /credentials/password inside of the ubuntu-5 pod.
-                      <img
-                        style={{ width: '100%', paddingTop: '0.5rem' }}
-                        src={multiUbuntu11}
-                      ></img>
+                      <img className="w-100 pt-3" src={multiUbuntu11}></img>
                       Here, the permission is denied when we try to view the password text file. To
                       check audit logs, replace KubeArmor in the node where Ubuntu 5 is located.
-                      <img
-                        style={{ width: '100%', paddingTop: '0.5rem' }}
-                        src={multiUbuntu12}
-                      ></img>
-                      <img
-                        style={{ width: '100%', paddingTop: '0.5rem' }}
-                        src={multiUbuntu13}
-                      ></img>
-                      <h4 style={{ marginTop: '1rem' }}>Setting kubeArmor up on Kubernetes</h4>
+                      <img className="w-100 pt-3" src={multiUbuntu12}></img>
+                      <img className="w-100 pt-3" src={multiUbuntu13}></img>
+                      <h4 className="mt-3">Setting kubeArmor up on Kubernetes</h4>
                       Prerequisite: We need a working Kubernetes setup for this. We can use a cloud
                       Kubernetes offering GCP or set yourself locally using minikube. If you are
                       using minikube then we also require kubectl. The daemon-set has to be
@@ -116,7 +104,7 @@ const Blog1 = () => {
                       that security policy. KubeArmor Security Policy to block sleep command in
                       containers during runtime Find more about this on “Sample deployment of
                       Multiubuntu with KubeArmor”
-                      <h4 style={{ marginTop: '1rem' }}>Conclusion</h4>
+                      <h4 className="mt-3">Conclusion</h4>
                       In this blog, we looked at the basics of Kubernetes security monitoring and
                       how to set up the kubeArmor on Kubernetes which automatically detects the
                       changes in security policies and enforces them on the respective containers

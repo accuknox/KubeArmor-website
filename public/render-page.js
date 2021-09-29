@@ -51683,7 +51683,7 @@ const Blog = () => {
     style: {
       textAlign: 'left'
     }
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", null, "Kubernetes security"), "In recent times organizations are migrating from on-premise to cloud, owing to the multi-dimensional nature of today\u2019s cloud-native technology landscape. Due to this, it is easier than ever to build and deploy application environments quickly through containerization which has resulted in 45.6% of enterprises to use Kubernetes in their production environments, it is important for us to know how to secure it.....")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", null, "Kubernetes security"), "In recent times organizations are migrating from on-premise to cloud, owing to the multi-dimensional nature of today\u2019s cloud-native technology landscape. Due to this, it is easier than ever to build and deploy application environments quickly through containerization which has resulted in 45.6% of enterprises to use Kubernetes in their production environments, it is important for us to know how to secure it.")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "col-lg-12 col-md-4 pt-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "card kbm-card"
@@ -51703,7 +51703,7 @@ const Blog = () => {
     style: {
       color: '#007bff'
     }
-  }, "Security policies..."))))))))));
+  }, "Security policies."))))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Blog);

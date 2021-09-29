@@ -24,12 +24,12 @@ const Blog1 = () => {
                       quickly through containerization which has resulted in 45.6% of enterprises to
                       use Kubernetes in their production environments, it is important for us to
                       know how to secure it.
-                      <h4 style={{ marginTop: '1rem' }}>Let's Talk about why it is difficult</h4>
+                      <h4 className="mt-3">Let's Talk about why it is difficult</h4>
                       According to this analysis, security is one of the hardest challenges of
                       running Kubernetes. There are numerous moving layers in the cloud-native
                       stack, hence we may not focus on security early on. By default, some
                       distributions of Kubernetes may not secure.
-                      <h4 style={{ marginTop: '1rem' }}>Prevention and Detection</h4>
+                      <h4 className="mt-3">Prevention and Detection</h4>
                       This has unfolded rampant increase in cyber attacks on the cloud. To mitigate
                       this, we have to secure all the pods and containers which are simple platforms
                       just like Windows or Linux or a MySQL database and are only as secure as you
@@ -65,7 +65,7 @@ const Blog1 = () => {
                       policies to containers in runtime Produce container-aware audit logs Provide
                       easy-to-use semantics for policy definitions, and Support the network security
                       enforcement among containers.
-                      <h4 style={{ marginTop: '1rem' }}>Setting kubeArmor up on Kubernetes</h4>
+                      <h4 className="mt-3">Setting kubeArmor up on Kubernetes</h4>
                       Prerequisite: We need a working Kubernetes setup for this. We can use a cloud
                       Kubernetes offering GCP or set yourself locally using minikube. If you are
                       using minikube then we also require kubectl. The daemon-set has to be
@@ -82,7 +82,7 @@ const Blog1 = () => {
                       that security policy. KubeArmor Security Policy to block sleep command in
                       containers during runtime Find more about this on “Sample deployment of
                       Multiubuntu with KubeArmor”
-                      <h4 style={{ marginTop: '1rem' }}>Conclusion</h4>
+                      <h4 className="mt-3">Conclusion</h4>
                       In this blog, we looked at the basics of Kubernetes security monitoring and
                       how to set up the kubeArmor on Kubernetes which automatically detects the
                       changes in security policies and enforces them on the respective containers
