@@ -8,7 +8,7 @@ const Demopolicies1 = () => {
     >
       <p style={{ marginBottom: '10px', color: 'white' }}>apiVersion: security.accuknox.com/v1</p>
       <p style={{ marginBottom: '10px', color: 'white' }}>kind: KubeArmorPolicy</p>
-      <p style={{ marginBottom: '10px', color: 'white' }}>metadata: </p>
+      <p style={{ marginBottom: '10px', color: 'white' }}>metadata:</p>
       <p style={{ marginLeft: '15px', marginBottom: '10px', color: 'white' }}>
         name: ksp-wordpress-config-block
       </p>

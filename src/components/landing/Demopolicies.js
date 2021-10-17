@@ -29,7 +29,7 @@ const Demopolicies = () => {
   return (
     <div>
       <section id="stats" className="pt-20 pb-10">
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           <h1 className=" font-weight-bold text-center" style={{ color: '#0B4296' }}>
             Sample Policies
           </h1>

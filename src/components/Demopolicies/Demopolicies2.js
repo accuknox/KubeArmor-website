@@ -20,7 +20,7 @@ const Demopolicies2 = () => {
       <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#0AFF00' }}>selector:</p>
       <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#0AFF00' }}>matchLabels:</p>
       <p style={{ marginLeft: '50px', marginBottom: '10px', color: '#0AFF00' }}>app: mysql</p>
-      <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#FFD100' }}>file:</p>
+      <p style={{ marginLeft: '15px', marginBottom: '10px', color: '#FFD100' }}>file: </p>
       <p style={{ marginLeft: '30px', marginBottom: '10px', color: '#FFD100' }}>
         matchDirectories:
       </p>

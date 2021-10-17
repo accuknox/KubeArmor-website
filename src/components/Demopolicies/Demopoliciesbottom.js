@@ -6,7 +6,7 @@ const Demopoliciesbottom = () => {
       <div className="row pt-5 gutter-2">
         <div className="col-lg-4 col-md-4  ">
           <div className="dpbuttontype text-center justify-between items-center">
-            <p className="font-weight-bold p-5">Lateral Movement</p>
+            <p className="font-weight-bold p-5">Lateral Movement </p>
           </div>
         </div>
         <div className="col-lg-4 col-md-4 ">
