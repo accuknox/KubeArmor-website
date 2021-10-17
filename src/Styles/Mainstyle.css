@@ -1517,3 +1517,13 @@ a {
 .slackbutton div {
   justify-content: center;
 }
+
+.codetop {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.blue-heading {
+  color: #0b4296;
+}

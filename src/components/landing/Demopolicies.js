@@ -30,9 +30,7 @@ const Demopolicies = () => {
     <div>
       <section id="stats" className="pt-20 pb-10">
         <div className="container mx-auto ">
-          <h1 className=" font-weight-bold" style={{ color: '#082D75' }}>
-            Sample Policies
-          </h1>
+          <h1 className=" font-weight-bold text-center blue-heading">Sample Policies</h1>
           <div className="row pt-5">
             <div className="col-lg-6 col-md-4 ">
               <Demopolicies1 />

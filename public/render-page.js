@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Workspace\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\concat.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\flatten.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\get.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\isObject.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\merge.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("D:\\NewKube\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\concat.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\flatten.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\get.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\isObject.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\merge.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Workspace\\KubeArmor-website\\node_modules\\@reach\\router\\index.js", "fs", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\concat.js", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\flatten.js", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\get.js", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\isObject.js", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\merge.js", "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["D:\\NewKube\\KubeArmor-website\\node_modules\\@reach\\router\\index.js", "fs", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\concat.js", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\flatten.js", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\get.js", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\isObject.js", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\merge.js", "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Workspace\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\concat.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\flatten.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\get.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\isObject.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\merge.js"), require("C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("D:\\NewKube\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\concat.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\flatten.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\get.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\isObject.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\merge.js"), require("D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Workspace\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"], root["fs"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\concat.js"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\flatten.js"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\get.js"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\isObject.js"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\merge.js"], root["C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["D:\\NewKube\\KubeArmor-website\\node_modules\\@reach\\router\\index.js"], root["fs"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\concat.js"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\flatten.js"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\get.js"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\isObject.js"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\merge.js"], root["D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -110,7 +110,6 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
-  "component---src-pages-blogs-blog-1-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/Blogs/blog1.js */ "./src/pages/Blogs/blog1.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
   }
 
@@ -4880,41 +4879,42 @@ function contains(parent, child) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getBoundingClientRect; });
-/* harmony import */ var _instanceOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./instanceOf.js */ "./node_modules/@popperjs/core/lib/dom-utils/instanceOf.js");
-
-var round = Math.round;
-function getBoundingClientRect(element, includeScale) {
+// import { isHTMLElement } from './instanceOf';
+function getBoundingClientRect(element, // eslint-disable-next-line unused-imports/no-unused-vars
+includeScale) {
   if (includeScale === void 0) {
     includeScale = false;
   }
 
   var rect = element.getBoundingClientRect();
   var scaleX = 1;
-  var scaleY = 1;
-
-  if (Object(_instanceOf_js__WEBPACK_IMPORTED_MODULE_0__["isHTMLElement"])(element) && includeScale) {
-    var offsetHeight = element.offsetHeight;
-    var offsetWidth = element.offsetWidth; // Do not attempt to divide by 0, otherwise we get `Infinity` as scale
-    // Fallback to 1 in case both values are `0`
-
-    if (offsetWidth > 0) {
-      scaleX = rect.width / offsetWidth || 1;
-    }
-
-    if (offsetHeight > 0) {
-      scaleY = rect.height / offsetHeight || 1;
-    }
-  }
+  var scaleY = 1; // FIXME:
+  // `offsetWidth` returns an integer while `getBoundingClientRect`
+  // returns a float. This results in `scaleX` or `scaleY` being
+  // non-1 when it should be for elements that aren't a full pixel in
+  // width or height.
+  // if (isHTMLElement(element) && includeScale) {
+  //   const offsetHeight = element.offsetHeight;
+  //   const offsetWidth = element.offsetWidth;
+  //   // Do not attempt to divide by 0, otherwise we get `Infinity` as scale
+  //   // Fallback to 1 in case both values are `0`
+  //   if (offsetWidth > 0) {
+  //     scaleX = rect.width / offsetWidth || 1;
+  //   }
+  //   if (offsetHeight > 0) {
+  //     scaleY = rect.height / offsetHeight || 1;
+  //   }
+  // }
 
   return {
-    width: round(rect.width / scaleX),
-    height: round(rect.height / scaleY),
-    top: round(rect.top / scaleY),
-    right: round(rect.right / scaleX),
-    bottom: round(rect.bottom / scaleY),
-    left: round(rect.left / scaleX),
-    x: round(rect.left / scaleX),
-    y: round(rect.top / scaleY)
+    width: rect.width / scaleX,
+    height: rect.height / scaleY,
+    top: rect.top / scaleY,
+    right: rect.right / scaleX,
+    bottom: rect.bottom / scaleY,
+    left: rect.left / scaleX,
+    x: rect.left / scaleX,
+    y: rect.top / scaleY
   };
 }
 
@@ -51030,105 +51030,105 @@ __webpack_require__.r(__webpack_exports__);
 
 const Demopolicies1 = () => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard"
+    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard",
+    style: {
+      background: '#252937'
+    }
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "apiVersion: security.accuknox.com/v1"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "kind: KubeArmorPolicy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "metadata: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '10px'
-    }
+    className: "codetop"
   }, "name: ksp-wordpress-config-block"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '10px'
-    }
+    className: "codetop"
   }, "namespace: wordpress-mysql"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "spec:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "severity: 10"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "selector:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '30px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "matchLabels:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '50px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "app: wordpress"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "file:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "matchPaths:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- path: /var/www/html/wp-config.php"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "fromSource:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- path: /usr/sbin/apache2"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "action: Allow"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- path: /var/www/html/wp-config.php"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "action: Block"));
 };
@@ -51154,84 +51154,86 @@ __webpack_require__.r(__webpack_exports__);
 
 const Demopolicies2 = () => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard"
+    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard",
+    style: {
+      background: '#252937'
+    }
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "apiVersion: security.accuknox.com/v1"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "kind: KubeArmorPolicy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: 'white'
     }
   }, "metadata: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '10px'
-    }
+    className: "codetop"
   }, "name: ksp-mysql-dir-audit"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '10px'
-    }
+    className: "codetop"
   }, "namespace: wordpress-mysql"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack"
+    style: {
+      color: '#0AFF00'
+    }
   }, "spec:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "severity: 5"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "selector:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '30px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "matchLabels:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '50px',
-      marginBottom: '10px'
+      marginBottom: '10px',
+      color: '#0AFF00'
     }
   }, "app: mysql"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "file:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "matchDirectories:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- dir: /var/lib/mysql/"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "recursive: true"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "action: Audit"));
 };
@@ -51257,87 +51259,87 @@ __webpack_require__.r(__webpack_exports__);
 
 const Demopolicies3 = () => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard"
+    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard",
+    style: {
+      background: '#252937'
+    }
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "apiVersion: security.accuknox.com/v1"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "kind: KubeArmorPolicy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "metadata: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '11px'
-    }
+    className: "codetop"
   }, "name: ksp-wordpress-process-block"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '11px'
-    }
+    className: "codetop"
   }, "namespace: wordpress-mysql"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "spec:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "severity: 3"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "selector:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '30px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "matchLabels:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '50px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "app: wordpress"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "process:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "matchPaths:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- path: /usr/bin/apt"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- path: /usr/bin/apt-get"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "action: Block"));
 };
@@ -51363,99 +51365,99 @@ __webpack_require__.r(__webpack_exports__);
 
 const Demopolicies4 = () => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard"
+    className: "pt-3 px-3 pb-3 demopoliciestext demopoliciescard",
+    style: {
+      background: '#252937'
+    }
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "apiVersion: security.accuknox.com/v1"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "kind: KubeArmorPolicy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: 'white'
     }
   }, "metadata: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '11px'
-    }
+    className: "codetop"
   }, "name: ksp-wordpress-sa-block"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    style: {
-      marginLeft: '15px',
-      marginBottom: '11px'
-    }
+    className: "codetop"
   }, "namespace: wordpress-mysql"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "spec:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "severity: 8"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "tags: [\"MITRE\"]"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "message: \"block the k8s credential access\""), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '15px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "selector:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '30px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "matchLabels:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    className: "demopoliciesblack",
     style: {
       marginLeft: '50px',
-      marginBottom: '11px'
+      marginBottom: '11px',
+      color: '#0AFF00'
     }
   }, "app: wordpress"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "file:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '11px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "matchDirectories:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '30px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "- dir : /run/secrets/kubernetes.io/serviceaccount/"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '45px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "recursive: true"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     style: {
       marginLeft: '15px',
       marginBottom: '10px',
-      color: '#D70000'
+      color: '#FFD100'
     }
   }, "action: Block"));
 };
@@ -51483,49 +51485,49 @@ const Demopoliciesbottom = () => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "row pt-5 gutter-2"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4  "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "Lateral Movement"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "Credential Access"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
-  }, "Excecution"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+  }, "Excecution "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype2 text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "App Credentials in Config Files "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype2 text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "App Credentials in Config Files "))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype2 text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "Bash/Command inside Containers"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype2 text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     className: "font-weight-bold p-5"
   }, "Access Cloud Resources"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    className: "col-lg-4 col-md-4 "
+    className: "col-lg-4 col-md-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     className: "dpbuttontype2 text-center justify-between items-center"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
@@ -51680,9 +51682,7 @@ const Blog = () => {
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "An Introduction to Kubernetes Security using KubeArmor"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "card-body font-weight-normal"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-    style: {
-      textAlign: 'left'
-    }
+    className: "text-left"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", null, "Kubernetes security"), "In recent times organizations are migrating from on-premise to cloud, owing to the multi-dimensional nature of today\u2019s cloud-native technology landscape. Due to this, it is easier than ever to build and deploy application environments quickly through containerization which has resulted in 45.6% of enterprises to use Kubernetes in their production environments, it is important for us to know how to secure it.")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "col-lg-12 col-md-4 pt-4"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
@@ -51694,9 +51694,7 @@ const Blog = () => {
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "Security Policy deployment in MultiUbuntu with KubeArmor"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "card-body font-weight-normal"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-    style: {
-      textAlign: 'left'
-    }
+    className: "text-left"
   }, "KubeArmor, a container-aware runtime security enforcement system, developed by Accuknox helps in auditing and blocking any malicious access performed on containers. It not only restricts the behavior of the container at the system level but also blocks access to it and generates audit logs, and automatically sends them to the system. KubeArmor allows operators to define security policies and apply them to Kubernetes. Then, KubeArmor will automatically detect the changes in security policies from Kubernetes and enforce them to the corresponding containers and nodes. If there are any violations against security policies, KubeArmor immediately generates alerts with container identities. If operators have any logging systems, it automatically sends the alerts to their systems as well. To deploy Multiubuntu microservice, the steps are to be followed. These are the sample security policies for multiubuntu deployment.", ' ', Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
     href: "https://github.com/kubearmor/KubeArmor/tree/master/examples/multiubuntu",
     target: "_blank",
@@ -51749,10 +51747,7 @@ const Demopolicies = () => {
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "container mx-auto "
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("h1", {
-    className: " font-weight-bold",
-    style: {
-      color: '#082D75'
-    }
+    className: " font-weight-bold text-center blue-heading"
   }, "Sample Policies"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
     className: "row pt-5"
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_8__["jsx"])("div", {
@@ -52385,70 +52380,6 @@ __webpack_require__.r(__webpack_exports__);
   customerTitle: 'Director of Research and Data',
   customerImage: 'https://placeimg.com/150/150/people'
 }]);
-
-/***/ }),
-
-/***/ "./src/pages/Blogs/blog1.js":
-/*!**********************************!*\
-  !*** ./src/pages/Blogs/blog1.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.esm.js");
-
-
-
-
-const Blog1 = () => {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("section", {
-    id: "blog",
-    className: "pt-10 pb-10"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "container mx-auto"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "text-center justify-between items-center"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "row container mx-auto"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "col-lg-24 col-md-24 pt-4"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "card kbm-card"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
-    to: "/Blogs/blog1"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "card-header font-weight-bold"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", null, "An Introduction to Kubernetes Security using KubeArmor"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
-    className: "card-body font-weight-normal"
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
-    style: {
-      textAlign: 'left'
-    }
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", null, "Kubernetes security"), "In recent times organizations are migrating from on-premise to cloud, owing to the multi-dimensional nature of today\u2019s cloud-native technology landscape. Due to this, it is easier than ever to build and deploy application environments quickly through containerization which has resulted in 45.6% of enterprises to use Kubernetes in their production environments, it is important for us to know how to secure it.", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", {
-    style: {
-      marginTop: '1rem'
-    }
-  }, "Let's Talk about why it is difficult"), "According to this analysis, security is one of the hardest challenges of running Kubernetes. There are numerous moving layers in the cloud-native stack, hence we may not focus on security early on. By default, some distributions of Kubernetes may not secure.", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", {
-    style: {
-      marginTop: '1rem'
-    }
-  }, "Prevention and Detection"), "This has unfolded rampant increase in cyber attacks on the cloud. To mitigate this, we have to secure all the pods and containers which are simple platforms just like Windows or Linux or a MySQL database and are only as secure as you make it. There are some flaws in every system, including Kubernetes and Docker, but these security issues are caused directly or indirectly by the users and their applications. Kubernetes provides each pod in a cluster its own IP address and consequently, IP-based security is required. Moreover, cluster security demands:", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, " Network policies"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, " Access policies for individual pods"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, "RBAC and namespace access policies, etc")), "KubeArmor is an open-source tool that was created by AccuKnox and is available on GitHub. It will operate with LSMs (Linux security modules) allowing it to run on top of any Linux platforms such as Alpine, Ubuntu, and Container-optimized OS from Google. KubeArmor will automatically detect the changes in security policies and it will be imposed on the respective containers without any human intervention. If there are any violations against security policies, KubeArmor immediately generates audit logs with container identities. If operators have any logging systems, it automatically sends audit logs to their systems as well. Functionalities of KubeArmor:", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("ul", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, "Restricting the behavior of containers at the system level"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, "Enforcing security policies to containers in runtime"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, "Produce container-aware audit logs"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("li", null, "Provide easy-to-use semantics for policy definitions, and Support the network security enforcement among containers.")), "Restricting the behavior of containers at the system level Enforcing security policies to containers in runtime Produce container-aware audit logs Provide easy-to-use semantics for policy definitions, and Support the network security enforcement among containers.", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", {
-    style: {
-      marginTop: '1rem'
-    }
-  }, "Setting kubeArmor up on Kubernetes"), "Prerequisite: We need a working Kubernetes setup for this. We can use a cloud Kubernetes offering GCP or set yourself locally using minikube. If you are using minikube then we also require kubectl. The daemon-set has to be installed as part of the kube-system namespace thus giving it the rights to watch all the system events. Commands to install: Step #1: Deploy kubearmor for GKE: kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/deployments/GKE/kubearmor.yaml After a second kubeArmor should be running, to verify, you will see the pods you created in a moment. Before applying the security policy to the container or pod the annotations should be added to the deployment, under the metadata Sample deployment with annotations Here is an example of a security policy which is to block a process execution of the sleep command. When you apply the policy it will block this particular command, we can get the audit logs of that security policy. KubeArmor Security Policy to block sleep command in containers during runtime Find more about this on \u201CSample deployment of Multiubuntu with KubeArmor\u201D", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h4", {
-    style: {
-      marginTop: '1rem'
-    }
-  }, "Conclusion"), "In this blog, we looked at the basics of Kubernetes security monitoring and how to set up the kubeArmor on Kubernetes which automatically detects the changes in security policies and enforces them on the respective containers without any human intervention, and sends the audit logs to their system admins.")))))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Blog1);
 
 /***/ }),
 
@@ -53398,9 +53329,9 @@ const SvgCharts = () => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"]
 /***/ }),
 
 /***/ "@reach/router":
-/*!*******************************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\@reach\\router\\index.js" ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\@reach\\router\\index.js" ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53420,9 +53351,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 /***/ }),
 
 /***/ "lodash/concat":
-/*!************************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\concat.js" ***!
-  \************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\concat.js" ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53431,9 +53362,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_concat__;
 /***/ }),
 
 /***/ "lodash/flatten":
-/*!*************************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\flatten.js" ***!
-  \*************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\flatten.js" ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53442,9 +53373,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_flatten__;
 /***/ }),
 
 /***/ "lodash/get":
-/*!*********************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\get.js" ***!
-  \*********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\get.js" ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53453,9 +53384,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_get__;
 /***/ }),
 
 /***/ "lodash/isObject":
-/*!**************************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\isObject.js" ***!
-  \**************************************************************************************/
+/*!************************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\isObject.js" ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53464,9 +53395,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_isObject__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!***********************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\merge.js" ***!
-  \***********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\merge.js" ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -53475,9 +53406,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_merge__;
 /***/ }),
 
 /***/ "lodash/uniqBy":
-/*!************************************************************************************!*\
-  !*** external "C:\\Workspace\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js" ***!
-  \************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** external "D:\\NewKube\\KubeArmor-website\\node_modules\\lodash\\uniqBy.js" ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
