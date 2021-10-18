@@ -1064,12 +1064,12 @@ header {
 .nav-item {
   font-weight: 400;
   font-size: 16px;
+  color: #3c5171;
   font-style: normal;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-  background-color: #56ccf2 !important;
-  color: #fff !important;
+  color: #5398ff !important;
   width: 100%;
   border-radius: 3px;
 }
@@ -1510,10 +1510,73 @@ a {
 .slackbutton {
   width: 230px;
   height: 40px;
-  background: #ee3465;
+  background: #ff6d94;
   color: #ffffff;
   border-radius: 8px;
 }
 .slackbutton div {
   justify-content: center;
+}
+
+.Keyfeaturesdes {
+  color: #222222;
+}
+
+.keyfeaturetitle {
+  color: #0b4296;
+  font-weight: bold;
+}
+
+.bg-gradient {
+  background-color: linear-gradient(179.62deg, #fafcff 15%, #e1ebff 102.93%) !important;
+}
+
+.learnmore_btn {
+  background: #2667e9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 152px;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  text-decoration: none;
+}
+.learnmore_btn:hover {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+
+.arrow {
+  height: 10%;
+  width: 10%;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+.main_logo {
+  width: 210px;
+  height: auto;
+  display: flex;
+}
+
+.kube-title {
+  font-size: 48px;
+  line-height: 60px;
+  color: #0b4296;
+}
+
+.bg-blue {
+  background: rgb(246 249 255);
+}
+
+.codetop {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.blue-heading {
+  color: #0b4296;
 }
