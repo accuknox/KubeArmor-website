@@ -6,8 +6,8 @@ const Demopolicies1 = () => {
       className="pt-3 px-3 pb-3 demopoliciestext demopoliciescard"
       style={{ background: '#252937' }}
     >
-      <p style={{ marginBottom: '10px', color: 'white' }}>apiVersion: security.accuknox.com/v1</p>
-      <p style={{ marginBottom: '10px', color: 'white' }}>kind: KubeArmorPolicy</p>
+      <p style={{ marginBottom: '10px', color: 'white' }}>apiVersion: security.accuknox.com/v1 </p>
+      <p style={{ marginBottom: '10px', color: 'white' }}>kind: KubeArmorPolicy </p>
       <p style={{ marginBottom: '10px', color: 'white' }}>metadata: </p>
       <p className="codetop">name: ksp-wordpress-config-block</p>
       <p className="codetop">namespace: wordpress-mysql</p>
