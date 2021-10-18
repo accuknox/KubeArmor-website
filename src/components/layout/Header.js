@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import LogoIcon from '../../svg/LogoIcon';
-import Button from '../Button';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
@@ -10,7 +7,7 @@ const Header = () => {
   const [count, setCount] = useState(0);
   const query = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "Cover/KubeArmor Logo.png" }) {
+      logo: file(relativePath: { eq: "Header/Newlogo.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -28,23 +25,16 @@ const Header = () => {
   `);
 
   return (
-    <header className="top-0 bg-white">
+    <header className="top-0">
       <div className="px-3 container">
-        <Navbar bg="white" expand="lg" class="navbar navbar-expand-lg  navbar-light items-center">
+        <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
             <Link to="/">
-              <Img
-                fluid={query.logo.childImageSharp.fluid}
-                alt="Logo"
-                style={{
-                  width: '200px',
-                  height: '50px'
-                }}
-              />
+              <Img fluid={query.logo.childImageSharp.fluid} alt="Logo" className="main_logo" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" class="collapse navbar-collapse">
+          <Navbar.Collapse id="basic-navbar-nav" className="collapse navbar-collapse">
             <Nav as="ul" className="navbar-nav ml-md-auto">
               <Nav.Link
                 as="li"
@@ -60,13 +50,15 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
-	              href="#blog"
+                href="https://kubearmor.io/"
                 className={count === 1 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(1);
                 }}
               >
-                <a className="nav-link" href="#blog">Blog</a>
+                <a className="nav-link" href="https://kubearmor.io/" target="_blank">
+                  Blog
+                </a>
               </Nav.Link>
               <Nav.Link
                 as="li"

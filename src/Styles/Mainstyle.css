@@ -1574,7 +1574,7 @@ a {
 .codetop {
   margin-left: 15px;
   margin-bottom: 10px;
-  color: white;
+  color: white !important;
 }
 
 .blue-heading {

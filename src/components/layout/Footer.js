@@ -37,7 +37,7 @@ const Footer = () => {
   // `);
   return (
     <footer style={{ background: '#082D75' }}>
-      <div className="container mx-auto py-16 px-3 mt-48 mb-8 text-center text-white">
+      <div className="container mx-auto py-16 px-3 text-center text-white">
         <p className="font-weight-bold" style={{ fontSize: '20px', lineHeight: '40px' }}>
           KubeArmor is licensed under the Apache License, Version 2.0.
           <br />
