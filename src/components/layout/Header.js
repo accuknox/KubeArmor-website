@@ -86,7 +86,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
-                href="https://kubearmor.gitbook.io/kubearmor/"
+                href="https://docs.kubearmor.com"
                 target="_blank"
                 className={count === 4 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {

@@ -72,11 +72,11 @@ const Feature = () => {
               </div>
               <div>
                 <h5 className=" keyfeaturetitle pb-3">
-                  Restrict the behavior of containers at the system level
+                  Restrict the behavior of containers and other workloads
                 </h5>
                 <p className="Keyfeaturesdes">
-                  KubeArmor provides the ability to filter process executions, file accesses,
-                  networking operations, and resource utilization inside containers at the system
+                  KubeArmor provides the ability to restrict specific behavior of process executions, file accesses,
+                  networking operations, and resource utilization inside of your workload.
                   level.
                 </p>
               </div>
@@ -86,19 +86,18 @@ const Feature = () => {
                 <div>
                   <Img
                     fluid={query.f2.childImageSharp.fluid}
-                    alt="Enforce security policies to containers in runtime"
+                    alt="Enforce security policies at runtime"
                     style={{ width: '40px' }}
                   />
                 </div>
               </div>
               <div>
                 <h5 className=" keyfeaturetitle pb-3">
-                  Enforce security policies to containers in runtime
+                  Enforce security policies at runtime
                 </h5>
                 <p className="Keyfeaturesdes">
-                  KubeArmor directly enforces security policies into Linux Security Modules (LSMs)
-                  for each container based on the identities (e.g., labels) of given containers and
-                  security policies.
+                  KubeArmor directly enforces security policies using Linux Security Modules (LSMs)
+                  for each workload based on the identities (e.g., labels) of given containers or workloads.
                 </p>
               </div>
             </div>
@@ -107,18 +106,18 @@ const Feature = () => {
                 <div>
                   <Img
                     fluid={query.f3.childImageSharp.fluid}
-                    alt="Produce container-aware alert logs against policy violations"
+                    alt="Generate logs for policy violations"
                     style={{ width: '40px' }}
                   />
                 </div>
               </div>
               <div>
                 <h5 className=" keyfeaturetitle pb-3">
-                  Produce container-aware alert logs against policy violations.
+                  Generate logs when policy violations occur
                 </h5>
                 <p className="Keyfeaturesdes">
-                  KubeArmor produces alert logs for policy violations that happen in containers by
-                  monitoring the operations of containers' processes using its eBPF-based system
+                  KubeArmor produces alert logs for policy violations by
+                  monitoring the operations of containers' processes using its eBPF-based
                   monitor.
                 </p>
               </div>
