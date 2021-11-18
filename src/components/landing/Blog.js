@@ -56,7 +56,7 @@ const Blog = () => {
                 </h5>
                 <p className="card-text">LSM hooks in Linux Kernel mediates access to internal</p>
                 <a
-                  href="https://kubearmor.io/an-introduction-to-kubernetes-security-using-kubearmor/"
+                  href="https://blog.accuknox.com/an-introduction-to-kubernetes-security-using-kubearmor/"
                   target="_blank"
                   className="card-text"
                 >
@@ -81,7 +81,7 @@ const Blog = () => {
                   KubeArmor, a container-aware runtime security enforcement system
                 </p>
                 <a
-                  href="https://kubearmor.io/security-policy-deployment-in-multiubuntu-with-kubearmor/"
+                  href="https://blog.accuknox.com/kubearmor-policy-deployment-in-a-sample-workload/"
                   target="_blank"
                   className="card-text"
                 >
@@ -100,13 +100,13 @@ const Blog = () => {
                   className="card-title"
                   style={{ color: '#0B4296', fontWeight: 'bold' }}
                 >
-                  Introduction to Linux Security Modules (LSMs)
+                  What is KubeArmor and how does it compare with Falco, and Tracee?
                 </h5>
                 <p className="card-text">
                   In recent times organizations are migrating from on-premise to cloud,
                 </p>
                 <a
-                  href="https://kubearmor.io/introduction-to-linux-security-modules-lsms/"
+                  href="https://blog.accuknox.com/kubearmor-vs-falco-vs-tracee/"
                   target="_blank"
                   className="card-text"
                 >
@@ -116,7 +116,11 @@ const Blog = () => {
             </div>
           </div>
           <div className="row " style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <a href="https://kubearmor.io/" target="_blank" className="mt-10 learnmore_btn">
+            <a
+              href="https://blog.accuknox.com/tag/kubearmor/"
+              target="_blank"
+              className="mt-10 learnmore_btn"
+            >
               Learn more
               <Img
                 className="arrow"

@@ -50,13 +50,17 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
-                href="https://kubearmor.io/"
+                href="https://blog.accuknox.com/tag/kubearmor/"
                 className={count === 1 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(1);
                 }}
               >
-                <a className="nav-link" href="https://kubearmor.io/" target="_blank">
+                <a
+                  className="nav-link"
+                  href="https://blog.accuknox.com/tag/kubearmor/"
+                  target="_blank"
+                >
                   Blog
                 </a>
               </Nav.Link>
@@ -93,11 +97,7 @@ const Header = () => {
                   setCount(4);
                 }}
               >
-                <a
-                  className="nav-link"
-                  href="https://docs.kubearmor.com"
-                  target="_blank"
-                >
+                <a className="nav-link" href="https://docs.kubearmor.com" target="_blank">
                   Documentation
                 </a>
               </Nav.Link>
