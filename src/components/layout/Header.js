@@ -21,11 +21,29 @@ const Header = () => {
           }
         }
       }
+      star: file(relativePath: { eq: "Header/star.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 
   return (
     <header className="top-0">
+      <div className="text-center justify-content-center p-2 banner">
+        <Img
+          fluid={query.star.childImageSharp.fluid}
+          className="Coverbutton text-center justify-content-center mr-2"
+        />
+        If you like KubeArmor, please give us a star on GitHub!
+        <Img
+          fluid={query.star.childImageSharp.fluid}
+          className="Coverbutton text-center justify-content-center ml-2"
+        />
+      </div>
       <div className="px-3 container">
         <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
