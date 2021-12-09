@@ -33,7 +33,11 @@ const Header = () => {
 
   return (
     <header className="top-0">
-      <div className="text-center justify-content-center p-2 banner">
+      <a
+        href="https://github.com/kubearmor/KubeArmor/stargazers"
+        target="_blank"
+        className="text-center justify-content-center p-2 banner"
+      >
         <Img
           fluid={query.star.childImageSharp.fluid}
           className="Coverbutton text-center justify-content-center mr-2"
@@ -43,7 +47,7 @@ const Header = () => {
           fluid={query.star.childImageSharp.fluid}
           className="Coverbutton text-center justify-content-center ml-2"
         />
-      </div>
+      </a>
       <div className="px-3 container">
         <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>

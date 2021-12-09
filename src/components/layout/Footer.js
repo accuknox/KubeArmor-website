@@ -23,32 +23,40 @@ const Footer = () => {
   `);
   return (
     <footer style={{ background: '#082D75' }}>
-      <div className="container mx-auto pt-10 pb-2 text-center text-white">
+      <div className="container mx-auto pt-10 text-center text-white">
         <p style={{ fontSize: '20px', lineHeight: '40px' }}>
           KubeArmor is licensed under the Apache License, Version 2.0.
           <br />
           The eBPF-based container monitor is licensed under the General Public License, Version
           2.0.
         </p>
+        <hr className="mt-4" style={{ background: '#718096' }} />
       </div>
-      <div className="container mx-auto text-white">
-        <hr style={{ background: '#365F9E' }} />
-        <div className="row">
-          <p className="col-10" style={{ fontSize: '19px' }}>
+
+      <div className="container pt-4 pb-3" style={{ color: '#718096' }}>
+        <span className="px-0 row">
+          <p className="mx-0 px-0 col-10 text-white" style={{ opacity: '0.5' }}>
             © 2021 The KubeArmor Authors All Rights Reserved
           </p>
-          <a
-            href="https://www.linkedin.com/company/kubearmor"
-            target="_blank"
-            className="col-1"
-            style={{ maxWidth: '5.33%' }}
-          >
-            <Img fluid={query.linkdin.childImageSharp.fluid} className="Coverbutton " />
-          </a>
-          <a href="https://github.com//kubearmor//KubeArmor" target="_blank" className="col-1">
-            <Img fluid={query.github.childImageSharp.fluid} className="Coverbutton" />
-          </a>
-        </div>
+          <span className="col-2" style={{ float: 'right' }}>
+            <a href="https://www.linkedin.com/company/kubearmor" target="_blank">
+              <Img
+                fluid={query.github.childImageSharp.fluid}
+                alt="Logo"
+                className=""
+                style={{ height: '25px', width: '25px', float: 'right' }}
+              />
+            </a>
+            <a href="https://github.com//kubearmor//KubeArmor" target="_blank">
+              <Img
+                fluid={query.linkdin.childImageSharp.fluid}
+                alt="Logo"
+                className="mr-3"
+                style={{ height: '25px', width: '25px', float: 'right' }}
+              />
+            </a>
+          </span>
+        </span>
       </div>
     </footer>
   );
