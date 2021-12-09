@@ -251,3 +251,8 @@
   display: flex;
   font-size: 19px;
 }
+
+.banner:hover {
+  color: greenyellow;
+  text-decoration: none;
+}
