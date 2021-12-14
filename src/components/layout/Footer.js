@@ -19,44 +19,74 @@ const Footer = () => {
           }
         }
       }
+      accuk_logo: file(relativePath: { eq: "Header/accuk_logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
   return (
     <footer style={{ background: '#082D75' }}>
-      <div className="container mx-auto pt-10 text-center text-white">
-        <p style={{ fontSize: '20px', lineHeight: '40px' }}>
-          KubeArmor is licensed under the Apache License, Version 2.0.
-          <br />
-          The eBPF-based container monitor is licensed under the General Public License, Version
-          2.0.
-        </p>
-        <hr className="mt-4" style={{ background: '#718096' }} />
-      </div>
-
-      <div className="container pt-4 pb-3" style={{ color: '#718096' }}>
+      <div className="container mx-auto pt-10  text-white">
         <span className="px-0 row">
-          <p className="mx-0 px-0 col-10 text-white" style={{ opacity: '0.5' }}>
-            © 2021 The KubeArmor Authors All Rights Reserved
+          <p className="col-10" style={{ fontSize: '20px', lineHeight: '40px' }}>
+            KubeArmor is licensed under the Apache License, Version 2.0.
+            <br />
+            The eBPF-based container monitor is licensed under the General Public License, Version
+            2.0.
           </p>
           <span className="col-2" style={{ float: 'right' }}>
             <a href="https://www.linkedin.com/company/kubearmor" target="_blank">
-              <Img
-                fluid={query.github.childImageSharp.fluid}
-                alt="Logo"
-                className=""
-                style={{ height: '25px', width: '25px', float: 'right' }}
-              />
+              <Img fluid={query.github.childImageSharp.fluid} alt="Logo" className="media-icons" />
             </a>
             <a href="https://github.com//kubearmor//KubeArmor" target="_blank">
               <Img
                 fluid={query.linkdin.childImageSharp.fluid}
                 alt="Logo"
-                className="mr-3"
-                style={{ height: '25px', width: '25px', float: 'right' }}
+                className="mr-3 media-icons"
               />
             </a>
           </span>
         </span>
+        <hr className="mt-2" style={{ background: '#718096' }} />
+      </div>
+
+      <div className="container pt-2 pb-3">
+        <span className=" row">
+          <p className=" col-6 text-white">© 2021 The KubeArmor Authors All Rights Reserved</p>
+          <p
+            className="col-6 text-white"
+            style={{ float: 'right', display: 'flex', paddingLeft: '7rem' }}
+          >
+            KubeArmor was created by the team at{' '}
+            <a href="https://www.accuknox.com/" target="_blank">
+              <Img
+                fluid={query.accuk_logo.childImageSharp.fluid}
+                alt="Logo"
+                className="ml-2"
+                style={{ height: '2rem', width: '11rem' }}
+              />
+            </a>
+          </p>
+        </span>
+      </div>
+      <div className="pt-4 pb-4" style={{ background: '#041E45' }}>
+        <div className="container" style={{ color: 'white' }}>
+          © 2021 The Linux Foundation. All Rights Reserved. The Linux Foundation has registered
+          trademarks and uses trademarks. For a list of trademarks of the Linux Foundation, please
+          see our{' '}
+          <a
+            href="https://www.linuxfoundation.org/trademark-usage/"
+            target="_blank"
+            style={{ color: '#007bff' }}
+          >
+            Trademarks Usage page
+          </a>
+          .
+        </div>
       </div>
     </footer>
   );
