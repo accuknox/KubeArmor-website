@@ -256,3 +256,9 @@
   color: greenyellow;
   text-decoration: none;
 }
+
+.media-icons {
+  height: 25px;
+  width: 25px;
+  float: right;
+}
