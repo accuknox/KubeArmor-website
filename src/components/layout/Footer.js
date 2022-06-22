@@ -39,10 +39,10 @@ const Footer = () => {
             2.0.
           </p>
           <span className="col-2" style={{ float: 'right' }}>
-            <a href="https://www.linkedin.com/company/kubearmor" target="_blank">
+            <a href="https://github.com//kubearmor//KubeArmor" target="_blank">
               <Img fluid={query.github.childImageSharp.fluid} alt="Logo" className="media-icons" />
             </a>
-            <a href="https://github.com//kubearmor//KubeArmor" target="_blank">
+            <a href="https://www.linkedin.com/company/kubearmor" target="_blank">
               <Img
                 fluid={query.linkdin.childImageSharp.fluid}
                 alt="Logo"
