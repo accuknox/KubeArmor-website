@@ -12,8 +12,13 @@ import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import '../Styles/style.css';
 import '../Styles/Mainstyle.css';
+import { Helmet } from 'react-helmet';
 const home = () => {
   return (
+    <>
+    <Helmet>
+    <title>Runtime protection for Kubernetes</title>
+  </Helmet>
     <Layout>
       <Landing />
 
@@ -42,6 +47,7 @@ const home = () => {
         </p>
       </section> */}
     </Layout>
+    </>
   );
 };
 export default home;
