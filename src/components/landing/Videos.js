@@ -35,6 +35,34 @@ const Videos = () => {
                   style={{ borderRadius: '5px' }}
                   width="90%"
                   height="100%"
+                  src="https://www.youtube.com/embed/esXWUDlU-ck"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6">
+              <div className="Videoplayer mx-auto">
+                <iframe
+                  style={{ borderRadius: '5px' }}
+                  width="90%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/691AlW_GE1k"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6">
+              <div className="Videoplayer mx-auto">
+                <iframe
+                  style={{ borderRadius: '5px' }}
+                  width="90%"
+                  height="100%"
                   src="https://www.youtube.com/embed/NS8XC78wSME"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -42,6 +70,7 @@ const Videos = () => {
                 ></iframe>
               </div>
             </div>
+
             <div className="col-lg-6 col-md-6">
               <div className="Videoplayer mx-auto">
                 <iframe

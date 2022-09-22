@@ -12,7 +12,7 @@ const Cover = () => {
           }
         }
       }
-      cover: file(relativePath: { eq: "Cover/newcover.png" }) {
+      cover: file(relativePath: { eq: "Cover/updatedcover.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
