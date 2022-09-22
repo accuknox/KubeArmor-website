@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import CustomerCard from '../components/CustomerCard';
@@ -12,7 +13,7 @@ import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import '../Styles/style.css';
 import '../Styles/Mainstyle.css';
-import { Helmet } from 'react-helmet';
+
 const home = () => {
   return (
     <>
