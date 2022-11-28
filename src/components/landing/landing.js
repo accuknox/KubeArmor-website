@@ -6,6 +6,7 @@ import Videos from './Videos';
 import Demopolicies from './Demopolicies';
 import Kubdemo from './kubdemo';
 import Roadmap from './Roadmap';
+import Timeline from '../../pages/Roadmap';
 
 const Landing = () => {
   return (
@@ -16,7 +17,8 @@ const Landing = () => {
       <Blog />
       <Videos />
       <Demopolicies />
-      <Roadmap />
+      {/* <Roadmap /> */}
+      <Timeline />
     </div>
   );
 };
