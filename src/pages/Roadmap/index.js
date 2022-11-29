@@ -108,7 +108,7 @@ const Timeline = () => {
                 }}
               >
                 <h3 className="release-version">v0.8</h3>
-                <ul>
+                <ul className="release-items">
                   <li>Built-in SIEM</li>
                   <li>Seccomp</li>
                   <li>Granular metrics</li>
