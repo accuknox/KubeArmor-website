@@ -5,7 +5,7 @@ import Blog from './Blog';
 import Videos from './Videos';
 import Demopolicies from './Demopolicies';
 import Kubdemo from './kubdemo';
-import Roadmap from './Roadmap';
+// import Roadmap from './Roadmap';
 import Timeline from '../../pages/Roadmap';
 
 const Landing = () => {
