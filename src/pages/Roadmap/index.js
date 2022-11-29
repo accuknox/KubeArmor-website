@@ -52,7 +52,7 @@ const Timeline = () => {
   ];
   return (
     <section id="roadmap" className="pt-20 bg-blue">
-      <div className="container">
+      <div className="container px-0">
         <div className="container mx-auto ">
           <h1 className=" font-weight-bold pb-2 pt-5 text-center" style={{ color: '#0B4296' }}>
             Roadmap
@@ -83,8 +83,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.9</h3>
-                <ul>
+                <h3 className="release-version">v0.9</h3>
+                <ul className="release-items">
                   <li>Visualize sys calls + network in a simple UI</li>
                   <li>Advanced Threat Scanning</li>
                   <li>Port scanning detection</li>
@@ -107,7 +107,7 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.8</h3>
+                <h3 className="release-version">v0.8</h3>
                 <ul>
                   <li>Built-in SIEM</li>
                   <li>Seccomp</li>
@@ -132,8 +132,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.7</h3>
-                <ul>
+                <h3 className="release-version">v0.7</h3>
+                <ul className="release-items">
                   <li>ARM Support (Raspberry Pi, Azure ARM VM, Apple M1)</li>
                   <li>Network Policy & Microsegmentation</li>
                   <li>Container based policy support</li>
@@ -152,8 +152,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.6</h3>
-                <ul>
+                <h3 className="release-version">v0.6</h3>
+                <ul className="release-items">
                   <li>Support for non-orchestrated containers</li>
                   <li>Lenient way to whitelisting policies</li>
                   <li>Lenient way to whitelisting policies</li>
@@ -174,8 +174,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.5</h3>
-                <ul>
+                <h3 className="release-version">v0.5</h3>
+                <ul className="release-items">
                   <li>Support for BPF-LSM policy enforcement</li>
                   <li>Integration with the Kubernetes admission controller</li>
                   <li>Support for the CRI-O container runtime engine.</li>
@@ -192,8 +192,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.4</h3>
-                <ul>
+                <h3 className="release-version">v0.4</h3>
+                <ul className="release-items">
                   <li>Apparmor-enforcer: skip non-regular profiles</li>
                   <li>Updated Policy Matcher</li>
                   <li>Updated SELinux Enforcer</li>
@@ -212,9 +212,9 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.3</h3>
+                <h3 className="release-version">v0.3</h3>
 
-                <ul>
+                <ul className="release-items">
                   <li>Default Security Posture</li>
                   <li>ProcessName, ParentProcessName fields in all telemetry events</li>
                   <li>Improved Support for Virtual Machines</li>
@@ -232,8 +232,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.2</h3>
-                <ul>
+                <h3 className="release-version">v0.2</h3>
+                <ul className="release-items">
                   <li>EKS Cluster Support</li>
                   <li>Helm Chart for KubeArmor</li>
                   <li>Enable host policy in VM mode</li>
@@ -251,8 +251,8 @@ const Timeline = () => {
                   flexDirection: 'column'
                 }}
               >
-                <h3>v0.1</h3>
-                <ul>
+                <h3 className="release-version">v0.1</h3>
+                <ul className="release-items">
                   <li>Initial Release of KubeArmor</li>
                 </ul>
               </div>
