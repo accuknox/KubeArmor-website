@@ -37,7 +37,7 @@ const Cover = () => {
           <h5 className=" keyfeaturetitle pb-3 text-center">
                  KubeArmor uses eBPF and Linux Security Modules (LSM) to provide policy based system <br/> to restrict any unwanted, malicious behavior of cloud-native workloads at runtime. 
           </h5>
-          <a href="https://kubearmor.herokuapp.com/" target="_blank">
+          <a href="https://join.slack.com/t/kubearmor/shared_invite/zt-1ltmqdbc6-rSHw~LM6MesZZasmP2hAcA/" target="_blank">
             <button className="slackbutton mb-10" size="sm">
               <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div>
