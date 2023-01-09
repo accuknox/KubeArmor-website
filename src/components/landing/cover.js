@@ -31,13 +31,18 @@ const Cover = () => {
       >
         <div className="container pr-10 text-center">
           <h1 className="font-weight-bold justify-between items-center text-center pr-20 pl-20 pb-10 kube-title">
-            Runtime protection for  {' '}
+            Runtime protection for{' '}
             <span style={{ color: '#326DE6' }}>Kubernetes & other cloud Workloads</span>
           </h1>
           <h5 className=" keyfeaturetitle pb-3 text-center">
-                 KubeArmor uses eBPF and Linux Security Modules (LSM) to provide policy based system <br/> to restrict any unwanted, malicious behavior of cloud-native workloads at runtime. 
+            KubeArmor uses eBPF and Linux Security Modules (LSM) to provide policy based system{' '}
+            <br /> to restrict any unwanted, malicious behavior of cloud-native workloads at
+            runtime.
           </h5>
-          <a href="https://join.slack.com/t/kubearmor/shared_invite/zt-1ltmqdbc6-rSHw~LM6MesZZasmP2hAcA/" target="_blank">
+          <a
+            href="https://join.slack.com/t/kubearmor/shared_invite/zt-1ltmqdbc6-rSHw~LM6MesZZasmP2hAcA/"
+            target="_blank"
+          >
             <button className="slackbutton mb-10" size="sm">
               <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div>
