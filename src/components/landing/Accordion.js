@@ -240,20 +240,20 @@ const CodeBlock = ({ text }) => {
         overlay={<Tooltip id="tooltip-bottom">Copy</Tooltip>}
       >
         <span
-          className="absolute"
+          className="absolute flex justify-center items-center"
           onClick={handleCopyText}
           style={{
             backgroundColor: 'white',
-            top: '5px',
-            right: '5px',
-            width: '24px',
-            height: '24px',
+            top: '10px',
+            right: '10px',
+            width: '30px',
+            height: '30px',
             padding: '2px',
             cursor: 'pointer'
           }}
           id="copy"
         >
-          <img src={copyIcon} style={{ height: '20px', width: '20px' }} />
+          <img src={copyIcon} style={{ height: '24px', width: '24px' }} />
         </span>
       </OverlayTrigger>
     </div>
@@ -264,12 +264,12 @@ const UseCasesAccordion = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   return (
-    <div className="flex justify-center items-center flex-col w-full">
-      <h1 className=" font-weight-bold text-center blue-heading mb-10 mt-4">Use Cases</h1>
+    <div className="flex justify-center items-center flex-col w-full p-3">
+      <h1 className=" font-weight-bold text-center blue-heading mb-12 mt-6">Use Cases</h1>
       <Accordion
-        defaultActiveKey="0"
         onSelect={e => setActiveAccordion(e)}
-        style={{ width: '68%', marginBottom: '30px' }}
+        style={{ width: '75%', marginBottom: '30px' }}
+        className="accordian"
       >
         <div className="flex flex-col gap-4">
           {accordionList.map(accordion => {
@@ -304,7 +304,13 @@ const UseCasesAccordion = () => {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey={accordion.id}>
-                  <Card.Body style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <Card.Body
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '12px'
+                    }}
+                  >
                     <div>
                       <h4>Description</h4>
                       <p>{accordion.description}</p>

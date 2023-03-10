@@ -218,6 +218,9 @@
   .banner {
     height: 100% !important;
   }
+  .accordian {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
   .Videoplayer {
@@ -249,9 +252,10 @@
 
   .cloudnative-logo {
     width: fit-content !important;
-    margin-right: 10px !important;
   }
-
+  .accordian {
+    width: 75% !important;
+  }
   .github-text {
     width: 70% !important;
     display: flex !important;
