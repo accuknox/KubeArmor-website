@@ -9,7 +9,7 @@ import { Accordion, Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import arrowDown from '../../images/Accordion/arrow-down.png';
 import arrowRight from '../../images/Accordion/arrow-right.png';
 import copyIcon from '../../images/Accordion/copy.png';
-import useCopyToClipboard from '../UseCopyToClipboard';
+import useCopyToClipboard from '../../hooks/UseCopyToClipboard';
 
 const accordionList = [
   {
