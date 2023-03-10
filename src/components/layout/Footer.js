@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 const Footer = () => {
@@ -39,10 +39,10 @@ const Footer = () => {
             2.0.
           </p>
           <span className="col-2" style={{ float: 'right' }}>
-            <a href="https://github.com//kubearmor//KubeArmor" target="_blank">
+            <a href="https://github.com//kubearmor//KubeArmor" target="_blank" rel="noreferrer">
               <Img fluid={query.github.childImageSharp.fluid} alt="Logo" className="media-icons" />
             </a>
-            <a href="https://www.linkedin.com/company/kubearmor" target="_blank">
+            <a href="https://www.linkedin.com/company/kubearmor" target="_blank" rel="noreferrer">
               <Img
                 fluid={query.linkdin.childImageSharp.fluid}
                 alt="Logo"
@@ -56,13 +56,20 @@ const Footer = () => {
 
       <div className="container pt-2 pb-3">
         <span className=" row">
-          <p className=" col-6 text-white">© 2021 The KubeArmor Authors All Rights Reserved</p>
+          <p className=" col-6 text-white" style={{ display: 'flex', alignItems: 'center' }}>
+            © 2023 The KubeArmor Authors All Rights Reserved
+          </p>
           <p
             className="col-6 text-white"
-            style={{ float: 'right', display: 'flex', paddingLeft: '7rem' }}
+            style={{
+              float: 'right',
+              display: 'flex',
+              alignItems: 'center',
+              paddingLeft: '7rem'
+            }}
           >
             KubeArmor was created by the team at{' '}
-            <a href="https://www.accuknox.com/" target="_blank">
+            <a href="https://www.accuknox.com/" target="_blank" rel="noreferrer">
               <Img
                 fluid={query.accuk_logo.childImageSharp.fluid}
                 alt="Logo"
@@ -75,13 +82,14 @@ const Footer = () => {
       </div>
       <div className="pt-4 pb-4" style={{ background: '#041E45' }}>
         <div className="container" style={{ color: 'white' }}>
-          © 2021 The Linux Foundation. All Rights Reserved. The Linux Foundation has registered
+          © 2023 The Linux Foundation. All Rights Reserved. The Linux Foundation has registered
           trademarks and uses trademarks. For a list of trademarks of the Linux Foundation, please
           see our{' '}
           <a
             href="https://www.linuxfoundation.org/trademark-usage/"
             target="_blank"
             style={{ color: '#007bff' }}
+            rel="noreferrer"
           >
             Trademarks Usage page
           </a>

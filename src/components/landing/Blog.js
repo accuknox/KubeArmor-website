@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
@@ -59,6 +58,7 @@ const Blog = () => {
                   href="https://blog.accuknox.com/an-introduction-to-kubernetes-security-using-kubearmor/"
                   target="_blank"
                   className="card-text"
+                  rel="noreferrer"
                 >
                   <small style={{ color: '#3B76EF' }}>Read More</small>
                 </a>
@@ -70,11 +70,7 @@ const Blog = () => {
                 alt="Restrict the behavior of containers at the system level"
               />
               <div className="card-body">
-                <h5
-                  className="card-title"
-                  className="card-title"
-                  style={{ color: '#0B4296', fontWeight: 'bold' }}
-                >
+                <h5 className="card-title" style={{ color: '#0B4296', fontWeight: 'bold' }}>
                   Security Policy Depolyment in multiUbuntu with KubeArmor
                 </h5>
                 <p className="card-text">
@@ -84,6 +80,7 @@ const Blog = () => {
                   href="https://blog.accuknox.com/kubearmor-policy-deployment-in-a-sample-workload/"
                   target="_blank"
                   className="card-text"
+                  rel="noreferrer"
                 >
                   <small style={{ color: '#3B76EF' }}>Read More</small>
                 </a>
@@ -95,20 +92,17 @@ const Blog = () => {
                 alt="Restrict the behavior of containers at the system level"
               />
               <div className="card-body">
-                <h5
-                  className="card-title"
-                  className="card-title"
-                  style={{ color: '#0B4296', fontWeight: 'bold' }}
-                >
-                  What is KubeArmor and how does it compare with Falco, and Tracee?
+                <h5 className="card-title" style={{ color: '#0B4296', fontWeight: 'bold' }}>
+                  Securing your Kubernetes Cluster Defense in Depth with Kyverno
                 </h5>
                 <p className="card-text">
-                  In recent times organizations are migrating from on-premise to cloud,
+                  With the recent pace of innovation in cloud and cloud-native adoption
                 </p>
                 <a
-                  href="https://blog.accuknox.com/kubearmor-vs-falco-vs-tracee/"
+                  href="https://www.accuknox.com/blog/securing-your-kubernetes-cluster-defense-in-depth-kyverno-kubearmor"
                   target="_blank"
                   className="card-text"
+                  rel="noreferrer"
                 >
                   <small style={{ color: '#3B76EF' }}>Read More</small>
                 </a>
@@ -120,6 +114,7 @@ const Blog = () => {
               href="https://blog.accuknox.com/tag/kubearmor/"
               target="_blank"
               className="mt-10 learnmore_btn"
+              rel="noreferrer"
             >
               Learn more
               <Img

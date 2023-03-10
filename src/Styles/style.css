@@ -183,6 +183,44 @@
     height: 350px;
     padding: 1rem;
   }
+  .github-cta {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 10px 0 10px 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .github-text {
+    width: 100% !important;
+  }
+  .cloudnative-logo {
+    width: 100% !important;
+  }
+  .banner {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .github-cta {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 10px 0 10px 0;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .github-text {
+    width: 100% !important;
+  }
+  .cloudnative-logo {
+    width: 100% !important;
+  }
+  .banner {
+    height: 100% !important;
+  }
+  .accordian {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
   .Videoplayer {
@@ -200,6 +238,29 @@
   .kubedemo {
     width: 720px;
     height: 480px;
+  }
+  .github-cta {
+    flex-direction: row !important;
+    width: 70% !important;
+    height: 70px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .cloudnative-logo {
+    width: fit-content !important;
+  }
+  .accordian {
+    width: 75% !important;
+  }
+  .github-text {
+    width: 70% !important;
+    display: flex !important;
+    justify-content: end !important;
+    align-items: center !important;
   }
 }
 @media (min-width: 1600px) {
@@ -249,7 +310,9 @@
   background: #0b4296;
   color: white;
   display: flex;
+  align-items: center;
   font-size: 19px;
+  height: 70px;
 }
 
 .banner:hover {

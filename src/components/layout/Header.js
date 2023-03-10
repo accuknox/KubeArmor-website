@@ -1,7 +1,9 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import '../../Styles/style.css';
 
 const Header = () => {
   const [count, setCount] = useState(0);
@@ -28,6 +30,13 @@ const Header = () => {
           }
         }
       }
+      cloudnative: file(relativePath: { eq: "Header/cloud_native.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 
@@ -36,20 +45,45 @@ const Header = () => {
       <a
         href="https://github.com/kubearmor/KubeArmor/stargazers"
         target="_blank"
-        className="text-center justify-content-center p-2 banner"
+        className="text-center justify-content-center banner h-[70px]"
+        rel="noreferrer"
       >
-        <Img
-          fluid={query.star.childImageSharp.fluid}
-          className="Coverbutton text-center justify-content-center mr-2"
-        />
-        If you like KubeArmor, please give us a star on GitHub!
-        <Img
-          fluid={query.star.childImageSharp.fluid}
-          className="Coverbutton text-center justify-content-center ml-2"
-        />
+        <section
+          style={{
+            backgroundColor: '#0b4296',
+            width: '70%',
+            height: '70px',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingLeft: '30px',
+            paddingRight: '30px'
+          }}
+          className="github-cta"
+        >
+          <div className="flex items-center justify-end github-text" style={{ width: '70%' }}>
+            <Img
+              fluid={query.star.childImageSharp.fluid}
+              className="Coverbutton text-center justify-content-center mr-2"
+            />
+            If you like KubeArmor, please give us a star on GitHub!
+            <Img
+              fluid={query.star.childImageSharp.fluid}
+              className="Coverbutton text-center justify-content-center ml-2"
+            />
+          </div>
+          <div className="ml-auto cloudnative-logo flex justify-center items-center">
+            <Img
+              fluid={query.cloudnative.childImageSharp.fluid}
+              alt="Cloud Native"
+              style={{ height: '50px', width: '224px' }}
+            />
+          </div>
+        </section>
       </a>
-      <div className="px-3 container">
-        <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center">
+      <div className="px-3 container ">
+        <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center ">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
             <Link to="/">
               <Img fluid={query.logo.childImageSharp.fluid} alt="Logo" className="main_logo" />
@@ -82,6 +116,7 @@ const Header = () => {
                   className="nav-link"
                   href="https://blog.accuknox.com/tag/kubearmor/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Blog
                 </a>
@@ -119,7 +154,12 @@ const Header = () => {
                   setCount(4);
                 }}
               >
-                <a className="nav-link" href="https://docs.kubearmor.com" target="_blank">
+                <a
+                  className="nav-link"
+                  href="https://docs.kubearmor.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Documentation
                 </a>
               </Nav.Link>
@@ -127,7 +167,7 @@ const Header = () => {
             <Nav>
               <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
                 <button className="LogoButton" size="sm">
-                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank">
+                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank" rel="noreferrer">
                     <div style={{ display: 'flex', flexDirection: 'row' }}>
                       <div>
                         <Img
