@@ -1580,3 +1580,13 @@ a {
 .blue-heading {
   color: #0b4296;
 }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1rem;
+  -webkit-margin-start: 6px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
