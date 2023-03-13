@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
+import { kFormatter } from '../../utils';
 import '../../Styles/style.css';
 
 const Header = () => {
@@ -53,7 +54,7 @@ const Header = () => {
   useEffect(() => {
     fetch('https://api.github.com/repos/kubearmor/KubeArmor')
       .then(response => response.json())
-      .then(data => setGithubStars(data?.stargazers_count));
+      .then(data => setGithubStars(Number(data?.stargazers_count)));
   }, []);
 
   return (
@@ -123,7 +124,7 @@ const Header = () => {
                   />
                   <div className="flex">
                     <span className="text-base border-r pr-2">GitHub Stars</span>
-                    <span className="text-base pl-2">{githubStars}</span>
+                    <span className="text-base pl-2">{kFormatter(githubStars)}</span>
                   </div>
                 </div>
               </button>
