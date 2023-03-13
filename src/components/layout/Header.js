@@ -82,8 +82,8 @@ const Header = () => {
           </div>
         </section>
       </a>
-      <div className="px-3 container ">
-        <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center ">
+      <div className="px-3 container">
+        <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light items-center h-20">
           <Navbar.Brand href="/" style={{ display: 'flex' }}>
             <Link to="/">
               <Img fluid={query.logo.childImageSharp.fluid} alt="Logo" className="main_logo" />
