@@ -140,42 +140,6 @@ const accordionList = [
   },
   {
     id: '5',
-    title: 'Process Whitelisting',
-    description:
-      'You can use a security feature called "process isolation" or "process whitelisting" to set specific processes to be executed as part of a container or pod, and deny everything else. This can help to secure a containerized environment by limiting the processes that can run within it, and preventing unauthorized processes from being executed.',
-    attackScenario:
-      'Attacker uses command injection techniques to insert binaries in the pods/workloads and then execute the binary. Process-Whitelisting will deny any unknown process from execution.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: allow-specific-process
-      namespace: dvwa
-    spec:
-      action: Allow
-      file:
-        matchDirectories:
-        - dir: /
-          recursive: true
-      process:
-        matchPaths:
-        - path: /bin/bash
-        - fromSource:
-          - path: /bin/dash
-          path: /bin/ping
-        - fromSource:
-          - path: /usr/sbin/apache2
-          path: /bin/sh
-        - path: /usr/sbin/apache2
-      selector: 
-        matchLabels:
-          app: dvwa-web
-          tier: frontend
-      severity: 1`,
-    additionalInfo:
-      'This policy allows apache2, ping and few shell accesses in the pod and denies everything else'
-  },
-  {
-    id: '6',
     title: 'Deny execution of specific binaries in the pod',
     description:
       'Pods/Containers might get shipped with binaries which should never used in the production environments. Some of those bins might be useful in dev/staging environments but the same container image is carried forward in most cases to the production environment too. For security reasons, the devsecops team might want to disable use of these binaries in the production env even though the bins exists in the container. As an example, most of the container images are shipped with package management tools such as apk, apt, yum, etc. If anyone ends up using these bins in the prod env, it will increase the attack surface of the container/pod.',
@@ -201,18 +165,20 @@ const accordionList = [
       'This policy denies execution of package management tools such as apt, apt-get in the target pods.'
   },
   {
-    id: '7',
+    id: '6',
     title: 'Limit access to raw database tables in the pod',
     description:
       'MySQL and other database systems keep their raw tables in a specific folder path. This path can either if a path in a volume mount or local to the pod. Typically, these raw tables are accessed only by certain set of processes such as mysqld, mysqldump, mysqladmin. Any other binary should never be allowed to read or write into this folder.',
-    attackScenario: `Attackers will try to:
-    exfiltrate the raw tables to obtain user and other information
-    encrypt the contents of the files associated with tables for ransomware purpose
-    delete the tables to cause system downtime`,
+    attackScenario: `Attackers will try to:`,
+    attackScenarioList: [
+      'exfiltrate the raw tables to obtain user and other information',
+      'encrypt the contents of the files associated with tables for ransomware purpose',
+      'delete the tables to cause system downtime'
+    ],
     samplePolicy: null
   },
   {
-    id: '8',
+    id: '7',
     title: 'Allow only specific processes to use network primitives',
     description:
       'Typically, within a pod/container there are only specific processes that need to use network access. KubeArmor allows one to specify the set of binaries that are allowed to use network primitives such as TCP, UDP, Raw sockets and deny everyone else.',
@@ -264,7 +230,7 @@ const UseCasesAccordion = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   return (
-    <div className="flex justify-center items-center flex-col w-full p-3">
+    <section id="use-cases" className="flex justify-center items-center flex-col w-full p-3">
       <h1 className=" font-weight-bold text-center blue-heading mb-12 mt-6">Use Cases</h1>
       <Accordion
         onSelect={e => setActiveAccordion(e)}
@@ -318,6 +284,13 @@ const UseCasesAccordion = () => {
                     <div>
                       <h4>Attack Scenario</h4>
                       <p>{accordion.attackScenario}</p>
+                      {Boolean(accordion?.attackScenarioList) && (
+                        <ol>
+                          {accordion?.attackScenarioList?.map(item => (
+                            <li>{item}</li>
+                          ))}
+                        </ol>
+                      )}
                     </div>
                     <div>
                       <h4>Sample Policy</h4>
@@ -338,7 +311,7 @@ const UseCasesAccordion = () => {
           })}
         </div>
       </Accordion>
-    </div>
+    </section>
   );
 };
 

@@ -26,7 +26,7 @@ const Cover = () => {
       {/* <Header /> */}
 
       <section
-        className="pt-40 pb-30 md:pt-40 md:pb-30 bg-gradient text-center"
+        className="pb-30 md:pt-5 md:pb-30 bg-gradient text-center"
         style={{ background: 'linear-gradient(179.62deg, #fafcff 15%, #e1ebff 102.93%)' }}
       >
         <div className="container pr-10 text-center">

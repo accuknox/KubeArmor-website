@@ -7,9 +7,11 @@ import '../../Styles/style.css';
 
 const Header = () => {
   const [count, setCount] = useState(0);
+  const [githubStars, setGithubStars] = useState(null);
+
   const query = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "Header/Newlogo.png" }) {
+      logo: file(relativePath: { eq: "Header/kubearmor-logo.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -37,11 +39,25 @@ const Header = () => {
           }
         }
       }
+      slack: file(relativePath: { eq: "Cover/Slack.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 
+  // Fetch Github Stars
+  useEffect(() => {
+    fetch('https://api.github.com/repos/kubearmor/KubeArmor')
+      .then(response => response.json())
+      .then(data => setGithubStars(data?.stargazers_count));
+  }, []);
+
   return (
-    <header className="top-0">
+    <header className="sticky top-0 bg-white shadow">
       <a
         href="https://github.com/kubearmor/KubeArmor/stargazers"
         target="_blank"
@@ -82,12 +98,58 @@ const Header = () => {
           </div>
         </section>
       </a>
-      <div className="px-3 container ">
-        <Navbar expand="lg" className="navbar navbar-expand-lg  navbar-light items-center ">
-          <Navbar.Brand href="/" style={{ display: 'flex' }}>
+      <div className="px-3 container">
+        <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light items-center h-20">
+          <Navbar.Brand
+            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}
+          >
+            {/* KubeArmor Logo Button */}
             <Link to="/">
-              <Img fluid={query.logo.childImageSharp.fluid} alt="Logo" className="main_logo" />
+              <Img fluid={query.logo.childImageSharp.fluid} alt="Logo" className="main_logo mb-1" />
             </Link>
+
+            {/* Github Stars Button */}
+            <a href="https://github.com/kubearmor/KubeArmor/" target="_blank" rel="noreferrer">
+              <button
+                type="button"
+                className="h-8 rounded-md bg-white border-gray-900 border border-solid github-btn mt-1 ml-2"
+                size="sm"
+              >
+                <div className="flex justify-center items-center gap-2 h-full px-2 font-extrabold">
+                  <Img
+                    fluid={query.button.childImageSharp.fluid}
+                    alt="Button Icon"
+                    className="h-5 w-5"
+                  />
+                  <div className="flex">
+                    <span className="text-base border-r pr-2">GitHub Stars</span>
+                    <span className="text-base pl-2">{githubStars}</span>
+                  </div>
+                </div>
+              </button>
+            </a>
+
+            {/* Join Slack Button */}
+            <a
+              href="https://join.slack.com/t/kubearmor/shared_invite/zt-1ltmqdbc6-rSHw~LM6MesZZasmP2hAcA/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                type="button"
+                className="h-8 rounded-md bg-white border-gray-900 border border-solid github-btn mt-1"
+                size="sm"
+              >
+                <div className="flex justify-center items-center gap-2 h-full px-2 font-extrabold">
+                  <Img
+                    fluid={query.slack.childImageSharp.fluid}
+                    alt="Button Icon"
+                    className="h-5 w-5"
+                  />
+                  <span className="text-base">Join Slack</span>
+                </div>
+              </button>
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="collapse navbar-collapse">
@@ -141,8 +203,8 @@ const Header = () => {
                   setCount(3);
                 }}
               >
-                <a className="nav-link" href="#roadmap">
-                  Roadmap
+                <a className="nav-link" href="#use-cases">
+                  Use Cases
                 </a>
               </Nav.Link>
               <Nav.Link
@@ -162,24 +224,6 @@ const Header = () => {
                 >
                   Documentation
                 </a>
-              </Nav.Link>
-            </Nav>{' '}
-            <Nav>
-              <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
-                <button className="LogoButton" size="sm">
-                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank" rel="noreferrer">
-                    <div style={{ display: 'flex', flexDirection: 'row' }}>
-                      <div>
-                        <Img
-                          fluid={query.button.childImageSharp.fluid}
-                          alt="Button Icon"
-                          className="Coverbutton"
-                        />
-                      </div>
-                      <div style={{ marginLeft: '10px' }}>Github</div>
-                    </div>
-                  </a>
-                </button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

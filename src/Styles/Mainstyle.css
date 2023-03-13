@@ -1073,6 +1073,13 @@ header {
   width: 100%;
   border-radius: 3px;
 }
+
+.github-btn {
+  text-decoration: none !important;
+}
+.github-btn:hover {
+  color: #5398ff !important;
+}
 /* .navbar-light .navbar-nav .nav-item .nav-link {
   padding: 5px 15px;
 } */
@@ -1497,12 +1504,13 @@ a {
 }
 .LogoButton {
   width: 120px;
-  height: 40px;
+  height: 32px;
   background: linear-gradient(180deg, #fafafa 0%, #e7e7e7 100%);
   border: 1px solid #d4d4d4;
   box-sizing: border-box;
   border-radius: 8px;
   color: black !important;
+  margin-left: 0.5rem;
 }
 .LogoButton div {
   justify-content: center;
@@ -1579,4 +1587,14 @@ a {
 
 .blue-heading {
   color: #0b4296;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1rem;
+  -webkit-margin-start: 6px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
 }
