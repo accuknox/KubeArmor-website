@@ -9,7 +9,7 @@ const Header = () => {
   const [count, setCount] = useState(0);
   const query = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "Header/Newlogo.png" }) {
+      logo: file(relativePath: { eq: "Header/kubearmor-logo.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
