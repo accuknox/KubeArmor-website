@@ -264,7 +264,7 @@ const UseCasesAccordion = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   return (
-    <div className="flex justify-center items-center flex-col w-full p-3">
+    <section id="use-cases" className="flex justify-center items-center flex-col w-full p-3">
       <h1 className=" font-weight-bold text-center blue-heading mb-12 mt-6">Use Cases</h1>
       <Accordion
         onSelect={e => setActiveAccordion(e)}
@@ -338,7 +338,7 @@ const UseCasesAccordion = () => {
           })}
         </div>
       </Accordion>
-    </div>
+    </section>
   );
 };
 

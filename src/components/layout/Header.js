@@ -141,8 +141,8 @@ const Header = () => {
                   setCount(3);
                 }}
               >
-                <a className="nav-link" href="#roadmap">
-                  Roadmap
+                <a className="nav-link" href="#use-cases">
+                  Use Cases
                 </a>
               </Nav.Link>
               <Nav.Link
