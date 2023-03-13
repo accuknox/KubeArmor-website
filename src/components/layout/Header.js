@@ -165,9 +165,13 @@ const Header = () => {
               </Nav.Link>
             </Nav>{' '}
             <Nav>
-              <Nav.Link href="https://github.com/accuknox/KubeArmor/" target="_blank">
+              <Nav.Link href="https://github.com/kubearmor/KubeArmor/" target="_blank">
                 <button className="LogoButton" size="sm">
-                  <a href="https://github.com/accuknox/KubeArmor/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://github.com/kubearmor/KubeArmor/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div style={{ display: 'flex', flexDirection: 'row' }}>
                       <div>
                         <Img
