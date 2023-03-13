@@ -41,7 +41,7 @@ const Header = () => {
   `);
 
   return (
-    <header className="top-0">
+    <header className="sticky top-0 bg-white shadow">
       <a
         href="https://github.com/kubearmor/KubeArmor/stargazers"
         target="_blank"
