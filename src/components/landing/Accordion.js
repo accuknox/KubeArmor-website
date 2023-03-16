@@ -163,28 +163,6 @@ const accordionList = [
         Block`,
     policyInfo:
       'This policy denies execution of package management tools such as apt, apt-get in the target pods.'
-  },
-  {
-    id: '6',
-    title: 'Limit access to raw database tables in the pod',
-    description:
-      'MySQL and other database systems keep their raw tables in a specific folder path. This path can either if a path in a volume mount or local to the pod. Typically, these raw tables are accessed only by certain set of processes such as mysqld, mysqldump, mysqladmin. Any other binary should never be allowed to read or write into this folder.',
-    attackScenario: `Attackers will try to:`,
-    attackScenarioList: [
-      'exfiltrate the raw tables to obtain user and other information',
-      'encrypt the contents of the files associated with tables for ransomware purpose',
-      'delete the tables to cause system downtime'
-    ],
-    samplePolicy: null
-  },
-  {
-    id: '7',
-    title: 'Allow only specific processes to use network primitives',
-    description:
-      'Typically, within a pod/container there are only specific processes that need to use network access. KubeArmor allows one to specify the set of binaries that are allowed to use network primitives such as TCP, UDP, Raw sockets and deny everyone else.',
-    attackScenario:
-      'An attacker binary would try to send a beacon to its C&C (Command and Control) Server. Also the binary might use the network primitives to exfiltrate pod/container data/configuration.',
-    samplePolicy: null
   }
 ];
 
