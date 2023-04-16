@@ -219,7 +219,7 @@ const Header = () => {
               >
                 <a
                   className="nav-link"
-                  href="https://docs.kubearmor.com"
+                  href="https://docs.kubearmor.io"
                   target="_blank"
                   rel="noreferrer"
                 >
