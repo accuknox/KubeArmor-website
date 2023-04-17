@@ -111,7 +111,7 @@ const Blog = () => {
           </div>
           <div className="row " style={{ alignItems: 'center', justifyContent: 'center' }}>
             <a
-              href="https://blog.accuknox.com/tag/kubearmor/"
+              href="https://www.accuknox.com/blog/"
               target="_blank"
               className="mt-10 learnmore_btn"
               rel="noreferrer"

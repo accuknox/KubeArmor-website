@@ -169,7 +169,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link
                 as="li"
-                href="https://blog.accuknox.com/tag/kubearmor/"
+                href="https://www.accuknox.com/blog/"
                 className={count === 1 ? 'nav-item active' : 'nav-item'}
                 onClick={e => {
                   setCount(1);
@@ -177,7 +177,7 @@ const Header = () => {
               >
                 <a
                   className="nav-link"
-                  href="https://blog.accuknox.com/tag/kubearmor/"
+                  href="https://www.accuknox.com/blog/"
                   target="_blank"
                   rel="noreferrer"
                 >
