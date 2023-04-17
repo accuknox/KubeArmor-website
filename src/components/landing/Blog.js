@@ -55,7 +55,7 @@ const Blog = () => {
                 </h5>
                 <p className="card-text">LSM hooks in Linux Kernel mediates access to internal</p>
                 <a
-                  href="https://blog.accuknox.com/an-introduction-to-kubernetes-security-using-kubearmor/"
+                  href="https://www.accuknox.com/blog/an-introduction-to-kubernetes-security-using-kubearmor"
                   target="_blank"
                   className="card-text"
                   rel="noreferrer"
@@ -77,7 +77,7 @@ const Blog = () => {
                   KubeArmor, a container-aware runtime security enforcement system
                 </p>
                 <a
-                  href="https://blog.accuknox.com/kubearmor-policy-deployment-in-a-sample-workload/"
+                  href="https://www.accuknox.com/blog/kubearmor-policy-deployment-in-a-sample-workload"
                   target="_blank"
                   className="card-text"
                   rel="noreferrer"
@@ -111,7 +111,7 @@ const Blog = () => {
           </div>
           <div className="row " style={{ alignItems: 'center', justifyContent: 'center' }}>
             <a
-              href="https://www.accuknox.com/blog/"
+              href="https://github.com/kubearmor/KubeArmor/wiki/"
               target="_blank"
               className="mt-10 learnmore_btn"
               rel="noreferrer"
