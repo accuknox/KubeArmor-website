@@ -19,26 +19,25 @@ const accordionList = [
       'K8s mounts the service account token as part of every pod by default. The service account token is a credential that can be used as bearer token to access k8s APIs and gain access to other k8s entities. Many a times there are no processes in the pod that use service account token which means in such cases the k8s service account token is an unused asset that can be leveraged by the attacker.',
     attackScenario:
       'An attacker would check for credential accesses so as to do lateral movements. For e.g., in most k8s attacks, the attacker after gaining entry into the k8s pods tries to use service account token and gain access into other entities.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: ksp-wordpress-block-sa
-      namespace: wordpress-mysql
-    spec:
-      severity: 7
-      selector:
-        matchLabels:
-          app: wordpress
-      file:
-        matchDirectories:
-        - dir: /run/secrets/kubernetes.io/serviceaccount/
-          recursive: true
-    
-          # cat /run/secrets/kubernetes.io/serviceaccount/token
-          # curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)"
-    
-      action:
-        Block`
+    samplePolicy: `
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: ksp-wordpress-block-sa
+  namespace: wordpress-mysql
+spec:
+  severity: 7
+  selector:
+    matchLabels:
+      app: wordpress
+  file:
+    matchDirectories:
+      - dir: /run/secrets/kubernetes.io/serviceaccount/
+        recursive: true
+        # cat /run/secrets/kubernetes.io/serviceaccount/token
+        # curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)"
+  action: Block
+    `
   },
   {
     id: '2',
@@ -47,32 +46,34 @@ const accordionList = [
       'Changes to system binary folders, configuration paths, credentials paths needs to be monitored for change. With KubeArmor, one can not only monitor for changes but also block any write attempts in such system folders. Compliance frameworks such as PCI-DSS, SOX, NERC CIP, FISMA, HIPAA, SANS expect FIM to be in place.',
     attackScenario:
       'An attacker might want to update the configuration so as to disable security controls or access logs.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: fim-for-system-paths
-      namespace: dvwa
-    spec:
-      action: Block
-      file:
-        matchDirectories:
-        - dir: /bin/
-          readOnly: true
-          recursive: true
-        - dir: /sbin/
-          readOnly: true
-          recursive: true
-        - dir: /usr/sbin/
-          readOnly: true
-          recursive: true
-        - dir: /usr/bin/
-          readOnly: true
-          recursive: true
-      message: Alert! An attempt to write to system directories denied.
-      severity: 5
-      tags:
-      - NIST
-      - PCI-DSS`
+    samplePolicy: `
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: fim-for-system-paths
+  namespace: dvwa
+spec:
+  action: Block
+  file:
+    matchDirectories:
+      - dir: /bin/
+        readOnly: true
+        recursive: true
+      - dir: /sbin/
+        readOnly: true
+        recursive: true
+      - dir: /usr/sbin/
+        readOnly: true
+        recursive: true
+      - dir: /usr/bin/
+        readOnly: true
+        recursive: true
+  message: Alert! An attempt to write to system directories denied.
+  severity: 5
+  tags:
+    - NIST
+    - PCI-DSS
+    `
   },
   {
     id: '3',
@@ -80,29 +81,31 @@ const accordionList = [
     description: `Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers. Root certificates are used in public key cryptography to identify a root certificate authority (CA). When a root certificate is installed, the system or application will trust certificates in the root's chain of trust that have been signed by the root certificate. Installation of a root certificate on a compromised system would give an adversary a way to degrade the security of that system.`,
     attackScenario:
       'Adversaries have used this technique to avoid security warnings prompting users when compromised systems connect over HTTPS to adversary controlled web servers that spoof legitimate websites in order to collect login credentials.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: protect-trust-bundles
-      namespace: dvwa
-    spec:
-      action: Block
-      file:
-        matchDirectories:
-        - dir: /etc/ssl/
-          readOnly: true
-          recursive: true
-        - dir: /etc/pki/
-          readOnly: true
-          recursive: true
-        - dir: /usr/local/share/ca-certificates/
-          readOnly: true
-          recursive: true
-      message: Credentials modification denied
-      severity: 1
-      tags:
-      - MITRE
-      - MITRE_T1552_unsecured_credentials`
+    samplePolicy: `
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: protect-trust-bundles
+  namespace: dvwa
+spec:
+  action: Block
+  file:
+    matchDirectories:
+      - dir: /etc/ssl/
+        readOnly: true
+        recursive: true
+      - dir: /etc/pki/
+        readOnly: true
+        recursive: true
+      - dir: /usr/local/share/ca-certificates/
+        readOnly: true
+        recursive: true
+  message: Credentials modification denied
+  severity: 1
+  tags:
+    - MITRE
+    - MITRE_T1552_unsecured_credentials
+    `
   },
   {
     id: '4',
@@ -111,32 +114,34 @@ const accordionList = [
       'You can use a security feature called "process isolation" or "process whitelisting" to set specific processes to be executed as part of a container or pod, and deny everything else. This can help to secure a containerized environment by limiting the processes that can run within it, and preventing unauthorized processes from being executed.',
     attackScenario:
       'Attacker uses command injection techniques to insert binaries in the pods/workloads and then execute the binary. Process-Whitelisting will deny any unknown process from execution.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: allow-specific-process
-      namespace: dvwa
-    spec:
-      action: Allow
-      file:
-        matchDirectories:
-        - dir: /
-          recursive: true
-      process:
-        matchPaths:
-        - path: /bin/bash
-        - fromSource:
+    samplePolicy: `
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: allow-specific-process
+  namespace: dvwa
+spec:
+  action: Allow
+  file:
+    matchDirectories:
+      - dir: /
+        recursive: true
+  process:
+    matchPaths:
+      - path: /bin/bash
+      - fromSource:
           - path: /bin/dash
-          path: /bin/ping
-        - fromSource:
+        path: /bin/ping
+      - fromSource:
           - path: /usr/sbin/apache2
-          path: /bin/sh
-        - path: /usr/sbin/apache2
-      selector: 
-        matchLabels:
-          app: dvwa-web
-          tier: frontend
-      severity: 1`
+        path: /bin/sh
+      - path: /usr/sbin/apache2
+  selector:
+    matchLabels:
+      app: dvwa-web
+      tier: frontend
+  severity: 1
+    `
   },
   {
     id: '5',
@@ -145,22 +150,23 @@ const accordionList = [
       'Pods/Containers might get shipped with binaries which should never used in the production environments. Some of those bins might be useful in dev/staging environments but the same container image is carried forward in most cases to the production environment too. For security reasons, the devsecops team might want to disable use of these binaries in the production env even though the bins exists in the container. As an example, most of the container images are shipped with package management tools such as apk, apt, yum, etc. If anyone ends up using these bins in the prod env, it will increase the attack surface of the container/pod.',
     attackScenario:
       'Attackers use system tools such fsck, ip, who, apt etc for reconnaissance and to download its accessory tooling from the remote servers.',
-    samplePolicy: `apiVersion: security.kubearmor.com/v1
-    kind: KubeArmorPolicy
-    metadata:
-      name: ksp-wordpress-block-process
-      namespace: wordpress-mysql
-    spec:
-      severity: 3
-      selector:
-        matchLabels:
-          app: wordpress
-      process:
-        matchPaths:
-        - path: /usr/bin/apt
-        - path: /usr/bin/apt-get
-      action:
-        Block`,
+    samplePolicy: `
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: ksp-wordpress-block-process
+  namespace: wordpress-mysql
+spec:
+  severity: 3
+  selector:
+    matchLabels:
+      app: wordpress
+  process:
+    matchPaths:
+      - path: /usr/bin/apt
+      - path: /usr/bin/apt-get
+  action: Block
+    `,
     policyInfo:
       'This policy denies execution of package management tools such as apt, apt-get in the target pods.'
   }
