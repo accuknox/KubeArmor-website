@@ -35,12 +35,9 @@ const Cover = () => {
             <span style={{ color: '#326DE6' }}> Kubernetes & other cloud Workloads</span>
           </h1>
           <h5 className=" keyfeaturetitle pb-3 text-center">
-            KubeArmor uses eBPF and Linux Security Modules (LSM) to provide a policy-based system to{' '}
-            <br />
-            restrict any unwanted, malicious behavior of cloud-native workloads at runtime. An
-            engine
-            <br />
-            to monitor and enforce inline remediation for cloud-based data protection services.
+            KubeArmor uses eBPF and Linux Security Modules (LSM) to provide policy based system{' '}
+            <br /> to restrict any unwanted, malicious behavior of cloud-native workloads at
+            runtime.
           </h5>
           <a
             href="https://join.slack.com/t/kubearmor/shared_invite/zt-1ltmqdbc6-rSHw~LM6MesZZasmP2hAcA/"
