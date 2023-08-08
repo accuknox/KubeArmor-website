@@ -55,21 +55,16 @@ const Footer = () => {
       </div>
 
       <div className="container pt-2 pb-3">
-        <span className="row">
-          <div>
-            <p className=" col-12 text-white" style={{ display: 'flex', alignItems: 'center' }}>
-              © 2023 The KubeArmor Authors All Rights Reserved
-            </p>
-            <p className=" col-12 text-white" style={{ display: 'flex', alignItems: 'center' }}>
-              Reach us: 7772 Orogrande Pl, Cupertino, California 95014, US | +1 510 579 8785
-            </p>
-          </div>
+        <span className=" row">
+          <p className=" col-6 text-white" style={{ display: 'flex', alignItems: 'center' }}>
+            © 2023 The KubeArmor Authors All Rights Reserved
+          </p>
           <p
             className="col-6 text-white"
             style={{
               float: 'right',
               display: 'flex',
-              alignItems: 'start',
+              alignItems: 'center',
               paddingLeft: '7rem'
             }}
           >
