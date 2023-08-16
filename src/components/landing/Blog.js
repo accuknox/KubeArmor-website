@@ -48,7 +48,7 @@ const Blog = () => {
               <Img
                 fluid={query.blog1.childImageSharp.fluid}
                 alt="Restrict the behavior of containers at the system level"
-                style={{ borderRadius: '9px 9px 0 0' }}
+                style={{ borderRadius: '8px 8px 0 0' }}
               />
               <div className="card-body">
                 <h5 className="card-title" style={{ color: '#0B4296', fontWeight: 'bold' }}>
