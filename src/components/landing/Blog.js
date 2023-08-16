@@ -58,7 +58,7 @@ const Blog = () => {
                   This blog goes over the steps to deploy KubeArmor on EKS Anywhere
                 </p>
                 <a
-                  href="https://www.accuknox.com/blog/announcing-kubearmor-support-for-eks-anywhere"
+                  href="https://www.accuknox.com/blog/amazon-eks-anywhere-support"
                   target="_blank"
                   className="card-text"
                   rel="noreferrer"
