@@ -48,14 +48,17 @@ const Blog = () => {
               <Img
                 fluid={query.blog1.childImageSharp.fluid}
                 alt="Restrict the behavior of containers at the system level"
+                style={{ borderRadius: '9px 9px 0 0' }}
               />
               <div className="card-body">
                 <h5 className="card-title" style={{ color: '#0B4296', fontWeight: 'bold' }}>
-                  An Introduction to Kubernetes Security using KubeArmor
+                  Announcing KubeArmor Support for EKS-Anywhere
                 </h5>
-                <p className="card-text">LSM hooks in Linux Kernel mediates access to internal</p>
+                <p className="card-text">
+                  This blog goes over the steps to deploy KubeArmor on EKS Anywhere
+                </p>
                 <a
-                  href="https://www.accuknox.com/blog/an-introduction-to-kubernetes-security-using-kubearmor"
+                  href="https://www.accuknox.com/blog/announcing-kubearmor-support-for-eks-anywhere"
                   target="_blank"
                   className="card-text"
                   rel="noreferrer"
