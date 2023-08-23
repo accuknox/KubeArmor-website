@@ -9,7 +9,7 @@
   status = 301
   force = true
 [[redirects]]
-  from = "https://pedantic-bell-18f42f.netlify.app/*"
+  from = "https://storied-selkie-270f20.netlify.app/*"
   to = "https://kubearmor.io/:splat"
   status = 301
   force = true
