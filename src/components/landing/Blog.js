@@ -71,7 +71,7 @@ const Blog = () => {
               />
               <div className="card-body">
                 <h5 className="card-title" style={{ color: '#0B4296', fontWeight: 'bold' }}>
-                  Security Policy Depolyment in multiUbuntu with KubeArmor
+                  Security Policy Deployment in multiUbuntu with KubeArmor
                 </h5>
                 <p className="card-text">
                   KubeArmor, a container-aware runtime security enforcement system
