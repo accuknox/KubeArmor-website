@@ -1,54 +1,73 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Button from '../components/Button';
-import Card from '../components/Card';
-import CustomerCard from '../components/CustomerCard';
-import LabelText from '../components/LabelText';
-import Landing from '../components/landing/landing';
-import Layout from '../components/layout/Layout';
-import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
-import '../Styles/style.css';
-import '../Styles/Mainstyle.css';
+import React from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import HomepageHeader from "@site/src/components/HomepageHeader";
 
-const home = () => {
+import styles from "./index.module.css";
+import HomepageArchitecture from "../components/HomepageArchitecture";
+import HomepageInstallation from "../components/HomepageInstallation";
+import HomepageUseCases from "../components/HomepageUseCases";
+import HomepageMarketplaces from "../components/HomepageMarketplaces";
+import HomepageExpansions from "../components/HomepageExpansions";
+import HomepageVersionChangelog from "../components/HomepageVersionChangelog";
+import HomepageBlogs from "../components/HomepageBlogs";
+import HomepageVideos from "../components/HomepageVideos";
+import HomepageTestimonials from "../components/HomepageTestimonials";
+import HomepageAdopters from "../components/HomepageAdopters";
+import HomepageCommunity from "../components/HomepageCommunity";
+import HomepageMembership from "../components/HomepageMembership";
+import HomepageSupport from "../components/HomepageSupport";
+import HomepageContributors from "../components/HomepageContributors";
+import HomepageSandbox from "../components/HomepageSandbox";
+
+// function HomepageHeader() {
+//   const {siteConfig} = useDocusaurusContext();
+//   return (
+//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+//       <div className="container">
+//         <h1 className="hero__title">{siteConfig.title}</h1>
+//         <p className="hero__subtitle">{siteConfig.tagline}</p>
+//         <div className={styles.buttons}>
+//           <Link
+//             className="button button--secondary button--lg"
+//             to="/docs/intro">
+//             Docusaurus Tutorial - 5min ⏱️
+//           </Link>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
+
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <>
-    <Helmet>
-    <title>Runtime protection for Kubernetes</title>
-  </Helmet>
-    <Layout>
-      <Landing />
-
-      {/* <SplitSection
-        id="services"
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-              against the closest competitors
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      /> */}
-
-      {/* <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-        <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-        <p className="mt-8 text-xl font-light">
-          Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus
-          in.
-        </p>
-        <p className="mt-8">
-          <Button size="xl">Get Started Now</Button>
-        </p>
-      </section> */}
+    <Layout
+      title={`Runtime Security Enforcement `}
+      description="Description will go into a meta tag in <head />"
+    >
+      <HomepageHeader />
+      <main>
+        <HomepageArchitecture />
+        <HomepageFeatures />
+        <HomepageInstallation />
+        <HomepageUseCases />
+        <HomepageMarketplaces />
+        <HomepageVersionChangelog />
+        <HomepageExpansions />
+        <HomepageBlogs />
+        <HomepageVideos />
+        <HomepageTestimonials />
+        <HomepageAdopters />
+        <HomepageCommunity />
+        <HomepageMembership />
+        <HomepageContributors />
+        <HomepageSandbox />
+        <HomepageSupport />
+      </main>
     </Layout>
-    </>
   );
-};
-export default home;
+}

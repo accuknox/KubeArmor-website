@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "header": "Kubesploit",
+    "description": "KubeArmor is a cloud-native runtime security enforcement system that restricts the behaviour (such as process execution, file access, and networking operations) of pods, containers, and nodes (VMs) at the system level",
+    "image": "tweet1",
+    "url": "https://twitter.com/kubesploit/status/1711081978424906018"
+  },
+  {
+    "id": 2,
+    "header": "Oracle Developers",
+    "description": "We're excited to announce that #developers can now use @KubeArmor, a runtime security engine that can enhance security of containerized applications on Oracle Container Engine for #Kubernetes. https://social.ora.cl/60153sOwv",
+    "image": "tweet2",
+    "url": "https://twitter.com/OracleDevs/status/1630711955211051009"
+  },
+  {
+    "id": 3,
+    "header": "Whitney Lee",
+    "description": "♫~ On tomorrow's  Enlightning, @daemon1024 will teach @KubeArmor, a @CloudNativeFdn project that protects your modern, cloud native workloads at runtime!",
+    "image": "tweet3",
+    "url": "https://twitter.com/wiggitywhitney/status/1666870707375206401"
+  },
+  {
+    "id": 4,
+    "header": "Sachin Maurya",
+    "description": "Finally, I Graduated from the @linuxfoundation Mentorship Program. It was fun and lots of learning working on the @KubeArmor Project. I learned a lot about Container Security and #eBPF. Now I'm looking to continue working on this awesome technology.",
+    "image": "tweet4",
+    "url": "https://twitter.com/0x_Mantis/status/1532611960302206977"
+  },
+  {
+    "id": 5,
+    "header": "ITNEXT DevOps",
+    "description": "Protecting Your Kubernetes Environment With KubeArmor by Patrick Kalkman at #ITNEXT. #containers #cybersecurity #kubernetes #cyberattack #hacker https://itnext.io/protecting-your-kubernetes-environment-with-kubearmor-76b02fc2209b?source=rss----5b301f10ddcd---4… (s)",
+    "image": "tweet5",
+    "url": "https://twitter.com/ITNEXT_DevOps/status/1644203403835330562"
+  },
+  {
+    "id": 6,
+    "header": "Manish Kapur",
+    "description": "Happy to share that @KubeArmor Zero trust #Security solution for #Kubernetes  has added support for Oracle Kubernetes Engine and @OracleLinux. Thank you to our friends at @AccuKnox https://github.com/kubearmor/KubeArmor/wiki/KubeArmor-support-for-Oracle-Container-Engine-for-Kubernetes-(OKE)… #k8s #cncf",
+    "image": "tweet6",
+    "url": "https://twitter.com/kapmani/status/1624061284214878210"
+  }
+]

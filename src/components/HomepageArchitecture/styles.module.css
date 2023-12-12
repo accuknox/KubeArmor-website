@@ -1,0 +1,33 @@
+.architecture {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg);
+}
+.architectureImage {
+  height: auto;
+  width: 100%;
+}
+/* @media screen and (max-width: 1080px) {
+  .architectureHeader,
+  .architectureDescription {
+    width: 80%;
+  }
+  .architectureDescription {
+    margin-bottom: 2rem;
+  }
+  .architecture {
+    padding: 5rem 2rem 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .architectureHeader {
+    width: 90%;
+    font-size: 2rem;
+  }
+  .architectureDescription {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+} */

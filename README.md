@@ -1,17 +1,41 @@
-# Gatsby Lander
+# Website
 
-This is an experimental starter built using [gatsby-theme-codebushi](https://github.com/codebushi/gatsby-theme-codebushi), a theme which uses [Tailwind CSS](https://tailwindcss.com/).
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+### Installation
 
-## Preview
+```
+$ yarn
+```
 
-https://gatsby-lander.surge.sh/
+### Local Development
 
-## Installation
+```
+$ yarn start
+```
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-lander https://github.com/codebushi/gatsby-starter-lander`
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-Run `gatsby develop` in the terminal to start the dev site.
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

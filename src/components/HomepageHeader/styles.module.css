@@ -1,0 +1,107 @@
+.heroBannerSection{
+  padding: 4rem 0;
+  background: var(--color-bg);
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg);
+  padding: 0;
+  gap: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+.heroAnnouncement {
+  background-color: #dae2ef;
+  color: var(--color-primary);
+  font-family: var(--font-main-medium);
+  font-size: 0.875rem;
+  border-radius: 0.75rem;
+  width: 36%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.heroAnnouncement svg:first-child{
+  margin-right: 1rem;
+}
+.heroTitle {
+  font-family: var(--font-main-bold);
+  font-size: 4rem;
+  color: var(--color-font-header);
+}
+.heroSubtitle {
+  font-family: var(--font-main-regular);
+  font-size: 1rem;
+  color: var(--color-font-sub);
+}
+.heroIcon {
+  height: 0.8em;
+}
+.heroImage {
+  overflow: visible;
+}
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.createdBy img{
+  width: 16rem;
+  /* height: 4rem; */
+}
+.createdBy p{
+  margin: 0;
+}
+@media screen and (max-width: 1300px){
+  .heroAnnouncement {
+    width: 44%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .heroImage {
+    width: 80%;
+  }
+  .heroAnnouncement {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .heroAnnouncement {
+    width: 36%;
+  }
+  .heroImage {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroAnnouncement {
+    width: 72%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .heroAnnouncement {
+    width: 90%;
+  }
+}

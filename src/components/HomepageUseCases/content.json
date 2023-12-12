@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "header": "Behavior Restriction",
+    "description": "Within workloads, KubeArmor limits particular behaviors of processes, file access, networking operations, and resource usage.",
+    "icon": "behaviorRestriction",
+    "link": "https://react-icons.github.io/react-icons/search?q=copy"
+  },
+  {
+    "id": 2,
+    "header": "Runtime Policy Enforcement",
+    "description": "Based on container or workload identities, LSMs are used to enforce security policies in real-time.",
+    "icon": "runtimePolicy",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "header": "Kubernetes-Native",
+    "description": "Policy development based on Kubernetes metadata. This allows for enhanced Kubernetes-native security enforcement.",
+    "icon": "kubernetesNative",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "header": "Policy Violation Logging",
+    "description": "Get logs for policy breaches while keeping track of container processes via eBPF.",
+    "icon": "policyViolation",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "header": "Simplified Policy Descriptions",
+    "description": "KubeArmor manages LSM complexity to simplify policy descriptions.",
+    "icon": "simplifiedPolicy",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "header": "Network security",
+    "description": "KubeArmor regulates communications between containers using network system calls.",
+    "icon": "networkSecurity",
+    "link": ""
+  }
+]

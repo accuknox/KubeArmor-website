@@ -1,0 +1,110 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+.featuresImage {
+  display: none;
+  width: 50%;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.containerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.content {
+  padding: 1.5rem;
+  color: var(--color-white);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1),
+    -1px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+.icon {
+  height: 2rem;
+  width: 2rem;
+  fill: white;
+}
+.iconContainer {
+  /* box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.1),
+    -2px 0px 9px 0px rgba(0, 0, 0, 0.1); */
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1),
+    -1px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+  background: transparent;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  display: inline-block;
+  align-items: center;
+}
+.contentTop {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contentHeader {
+  font-family: var(--font-main-semibold);
+  font-weight: 600;
+  color: var(--color-font-header);
+  font-size: 1.5rem;
+  /* margin-top: 1rem; */
+  margin: 0;
+}
+.contentDescription {
+  font-family: var(--font-main-regular);
+  font-weight: 400;
+  color: var(--color-font-sub);
+  font-size: 0.875rem;
+}
+.creator {
+  font-family: var(--font-main-medium);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-font-header);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.creatorLogo {
+  width: 16rem;
+  height: auto;
+}
+.containerDesktop {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .containerContent {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .icon {
+    height: 1rem;
+    width: 1rem;
+  }
+  .iconContainer {
+    padding: 0.25rem 0.5rem;
+  }
+  .contentHeader {
+    font-size: 1rem;
+  }
+  .contentTop {
+    margin-bottom: 0.5rem;
+  }
+
+}

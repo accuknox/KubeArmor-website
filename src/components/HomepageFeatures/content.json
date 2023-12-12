@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "feature": "Inline Mitigation",
+    "description": "KubeArmor lessens the attack surface on pods, containers, and virtual machines. For inline mitigation, it uses Linux Security Modules (LSMs) like AppArmor, BPF-LSM, and SELinux to provide security without changing the pod or container or without host-level adjustments.",
+    "icon": "inlineMitigation"
+  },
+  {
+    "id": 2,
+    "feature": "Simplicity with LSMs",
+    "description": "KubeArmor simplifies their intricacies and makes enforcing policy simple. It functions as a non-privileged daemonset and has host, pod, and container monitoring capabilities.",
+    "icon": "simplicityLSM"
+  },
+  {
+    "id": 3,
+    "feature": "Flaws of Post-Attack Mitigation",
+    "description": "Our inline approach is proactive, in contrast to post-attack mitigation, which kills processes after malicious intent is observed. Attackers are able to run code and possibly elude detection with the help of post-attack mitigation.",
+    "icon": "postAttack"
+  },
+  {
+    "id": 4,
+    "feature": "Challenges of Pod Security Context",
+    "description": "K8s native Pod Security Context has limitations, including difficulties in predicting available LSMs and a lack of support for BPF-LSM.",
+    "icon": "podSecurity"
+  },
+  {
+    "id": 5,
+    "feature": "Multi-Cloud Challenges",
+    "description": "Dealing with pod security contexts is difficult since cloud providers use various default LSMs.",
+    "icon": "cloudChallenges"
+  }
+]

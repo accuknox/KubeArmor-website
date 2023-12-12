@@ -1,0 +1,27 @@
+.membership {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+.member {
+  width: 15rem;
+  height: auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

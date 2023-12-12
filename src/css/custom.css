@@ -1,0 +1,229 @@
+/**
+ *__linkny CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is__link CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"),
+    url("../../static/font/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"),
+    url("../../static/font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url("../../static/font/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+    url("../../static/font/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono-Bold";
+  src: local("RobotoMono-Bold"),
+    url("../../static/font/RobotoMono/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: local("RobotoMono-Regular"),
+    url("../../static/font/RobotoMono/RobotoMono-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceCodePro-SemiBold";
+  src: local("SourceCodePro-SemiBold"),
+    url("../../static/font/SourceCodePro/SourceCodePro-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceCodePro-Medium";
+  src: local("SourceCodePro-Medium"),
+    url("../../static/font/SourceCodePro/SourceCodePro-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+:root {
+  --color-primary: #082c74;
+  --color-primary-light: #5297fe;
+  --color-bg: #f9fbff;
+  --color-font-header: #0f0f0f;
+  --color-font-sub: #3f4e64;
+  --color-font-tweet-link: #5f1efe;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-code-block: #181e25;
+  --color-footer-field: #b8cce1;
+  --color-gradient: linear-gradient(180deg, #0a4195 0%, #5297fe 100%);
+  --font-main-bold: "Poppins-Bold";
+  --font-main-semibold: "Poppins-SemiBold";
+  --font-main-medium: "Poppins-Medium";
+  --font-main-regular: "Poppins-Regular";
+  --font-terminal-bold: "RobotoMono-Bold";
+  --font-terminal-regular: "RobotoMono-Regular";
+  --font-code-block: "SourceCodePro-Medium";
+}
+
+.navbar {
+  background-color: rgba(249, 251, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  height: auto;
+  max-width: 1900px;
+  margin: 0 auto;
+  width: 100%;
+}
+.navbar__link {
+  font-family: var(--font-main-medium);
+  font-size: 1rem;
+  color: var(--color-black);
+}
+.navbar__link--active,
+.navbar__link:hover {
+  color: var(--color-primary-light);
+}
+.navbar-sidebar__item {
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
+}
+.container-medium {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 90%;
+}
+.Section {
+  padding: 6.4rem 0;
+  background-color: var(--color-bg);
+}
+.centerSectionHeading {
+  text-align: center;
+}
+.centerSectionHeading > * {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.centerSectionHeading h2{
+  font-family: var(--font-main-medium);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: 0.18rem;
+  padding-bottom: 1rem;
+}
+.centerSectionHeading p {
+  font-family: var(--font-main-regular);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-font-sub);
+  text-align: center;
+  max-width: 60rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+.centerSectionHeading h1 {
+  font-family: var(--font-main-semibold);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-font-header);
+  text-align: center;
+  max-width: 70rem;
+}
+.section-margin {
+  margin-top: 5rem;
+}
+
+.slick-slide {
+  padding: 0.5rem 1rem 3rem;
+}
+.footer {
+  background-color: var(--color-primary);
+  padding: 4rem 0;
+}
+/* .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+} */
+.margin-bottom--sm {
+  height: auto !important;
+  width: 60% !important;
+}
+.footerLogoLink_src-theme-Footer-Logo-styles-module {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+.footer__logo {
+  opacity: 1 !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+.footer__bottom {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+.footer__copyright {
+  align-self: center !important;
+  text-align: left;
+}
+.footer__links {
+  /* width: 40% !important; */
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-sidebar{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Section{
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar__items--right{
+    display: none;
+  }
+}
+@media(max-width: 600px) {
+  .centerSectionHeading h1{
+    font-size: 1.8rem;
+  }
+  .section-margin{
+    margin-top: 3rem;
+  }
+}
+/* hi */
