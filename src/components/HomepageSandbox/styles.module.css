@@ -1,0 +1,13 @@
+.sandbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  text-align: center;
+}
+.sandboxText {
+  font-family: var(--font-main-medium);
+  font-weight: 500;
+  font-size: 1.25rem;
+}

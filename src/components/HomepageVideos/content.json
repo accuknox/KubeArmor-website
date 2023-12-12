@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Kubernetes Clusters Defense with KubeArmor | Demo",
+    "video": "https://www.youtube.com/watch?v=7fx4U0PLL6w",
+    "alt": "video 1",
+    "image": "video1"
+  },
+  {
+    "id": 2,
+    "title": "Secure Workloads on GCOOS: KubeArmor's Shielding Strategies",
+    "video": "https://www.youtube.com/watch?v=9L28xhRl5u4",
+    "alt": "video 2",
+    "image": "video2"
+  },
+  {
+    "id": 3,
+    "title": "How to Install KubeArmor - Complete Guide",
+    "video": "https://www.youtube.com/watch?v=CH0qtp5DAhs",
+    "alt": "video 3",
+    "image": "video3"
+  },
+  {
+    "id": 4,
+    "title": "How to Install KubeArmor? | Oct 2021",
+    "video": "https://www.youtube.com/watch?v=2OK3e87b5jA",
+    "alt": "video 4",
+    "image": "video4"
+  },
+  {
+    "id": 5,
+    "title": "KubeArmor Working Demo",
+    "video": "https://www.youtube.com/watch?v=u1PpRsk03Ao",
+    "alt": "video 5",
+    "image": "video5"
+  },
+  {
+    "id": 6,
+    "title": "KubeArmor Explanation",
+    "video": "https://www.youtube.com/watch?v=NS8XC78wSME",
+    "alt": "video 6",
+    "image": "video6"
+  },
+  {
+    "id": 7,
+    "title": "Inside KubeArmor: Hands-On Fireside Chat with Kurtis Velarde",
+    "video": "https://www.youtube.com/watch?v=-LxQTYGcciA",
+    "alt": "video 7",
+    "image": "video7"
+  },
+  {
+    "id": 8,
+    "title": "Kyverno Admission Controller Policies Made Easy with KubeArmor",
+    "video": "https://www.youtube.com/watch?v=IJFwDIMRnQM",
+    "alt": "video 8",
+    "image": "video8"
+  },
+  {
+    "id": 9,
+    "title": "Securing Nephio 5G control plane using KubeArmor",
+    "video": "https://www.youtube.com/watch?v=hE9kMlLNl_s",
+    "alt": "video 9",
+    "image": "video9"
+  },
+  {
+    "id": 10,
+    "title": "Power of Zero Trust in DevSecOps | Must-Watch Webinar",
+    "video": "https://www.youtube.com/watch?v=d16OvW17ehs",
+    "alt": "video 10",
+    "image": "video10"
+  }
+]

@@ -1,0 +1,63 @@
+.support {
+  overflow: hidden;
+}
+.supportImage {
+  background-size: contain;
+  background-image: url(../../../static/img/cloud-support/Cloud-support.webp);
+  background-color: var(--color-primary);
+  gap: 6rem;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 2.25rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.supportText {
+  width: 50%;
+}
+.supportHeader {
+  font-family: var(--font-main-semibold);
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--color-white);
+}
+.supportDescription {
+  font-family: var(--font-main-regular);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-footer-field);
+}
+.supportCTA {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 50%;
+}
+@media screen and (max-width: 880px) {
+  .supportText,
+  .supportCTA {
+    width: 80%;
+  }
+  .supportImage {
+    background: var(--color-primary);
+  }
+}
+@media screen and (max-width: 550px) {
+  .supportText,
+  .supportCTA {
+    width: 100%;
+  }
+  .supportHeader {
+    font-size: 2rem;
+  }
+  .supportDescription {
+    font-size: 1rem;
+  }
+  .supportCTA {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  font-family: var(--font-main-medium);
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.button:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}

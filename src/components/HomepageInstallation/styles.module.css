@@ -1,0 +1,92 @@
+.installation {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+.installationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+.guide {
+  width: 60%;
+}
+.guideTitle {
+  font-family: var(--font-main-semibold);
+  font-weight: 600;
+  color: var(--color-font-header);
+  font-size: 1rem;
+}
+.guideText {
+  font-family: var(--font-main-regular);
+  font-weight: 400;
+  color: var(--color-font-subheader);
+  font-size: 1rem;
+}
+
+.codeContainer {
+  position: relative;
+}
+
+.codeBlock {
+  background: var(--color-code-block);
+  overflow-x: scroll;
+  z-index: 0;
+}
+
+.code {
+  font-family: var(--font-code-block);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+.codeCopy {
+  align-self: flex-end;
+  color: var(--color-white);
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  opacity: 0.8;
+  z-index: 1;
+}
+.codeCopy:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.installationVideo {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--font-main-medium);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.installationVideo:hover {
+  color: var(--color-primary);
+  opacity: 0.8;
+  text-decoration: none;
+}
+@media screen and (max-width: 880px) {
+  .installationContainer {
+    flex-direction: column;
+  }
+  .guide {
+    width: 100%;
+  }
+}
