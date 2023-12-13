@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <Layout
       title={`Runtime Security Enforcement `}
-      description="Description will go into a meta tag in <head />"
+      description="KubeArmor is a runtime Kubernetes security engine. It uses eBPF and Linux Security Modules(LSM) for fortifying workloads based on Cloud Containers, IoT/Edge, and 5G networks."
     >
       <HomepageHeader />
       <main>
