@@ -72,3 +72,7 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 yarn.lock
+
+# Generated files
+.docusaurus
+.cache-loader

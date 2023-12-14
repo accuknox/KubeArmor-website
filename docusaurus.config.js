@@ -1,10 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 // import React from "react";
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const url = "https://kubearmor.io";
-const baseUrl = "/";
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const url = 'https://kubearmor.io';
+const baseUrl = '/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -174,7 +174,11 @@ const config = {
             label: 'Documentation',
             position: 'left',
           },
-          { to: '/community', label: 'Community', position: 'left' },
+          {
+            to: 'https://community.cncf.io/cloud-native-security-india/',
+            label: 'Community',
+            position: 'left',
+          },
           {
             type: 'custom-GitHubStarButton',
             position: 'right',
@@ -212,7 +216,7 @@ const config = {
               },
               {
                 label: 'Community',
-                to: `${url + baseUrl}/community`,
+                to: 'https://community.cncf.io/cloud-native-security-india/',
               },
             ],
           },
@@ -225,7 +229,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                to: 'https://github.com/kubearmor/kubearmor.io',
+                to: 'https://github.com/kubearmor',
               },
               {
                 label: 'Slack',
