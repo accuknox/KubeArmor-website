@@ -46,25 +46,19 @@ export default function HomepageBlogs() {
           <h1>Open Source Solutions for Kubernetes Security</h1>
         </div>
         <div className={`section-margin ${styles.blogsSlider}`}>
-        {/* <div className={styles.blogsSlider}> */}
+          {/* <div className={styles.blogsSlider}> */}
           <Slider {...settings}>
             <Link
               to="https://github.com/kubearmor/KubeArmor/wiki/v0.11-Release-Blog"
               className={styles.container}
             >
               <div className={styles.containerWrapper}>
-                <img
-                  src={blogsImage1}
-                  alt="blogs image 1"
-                  className={styles.containerImage}
-                />
+                <img src={blogsImage1} alt="blogs image 1" className={styles.containerImage} />
               </div>
               <div className={styles.containerContent}>
                 <div className={styles.containerMain}>
                   <p className={styles.containerTags}>Release</p>
-                  <h4 className={styles.containerTitle}>
-                    KubeArmor v0.11 Release
-                  </h4>
+                  <h4 className={styles.containerTitle}>KubeArmor v0.11 Release</h4>
                 </div>
                 <div className={styles.containerData}>
                   <p className={styles.containerAuthor}>
@@ -79,23 +73,18 @@ export default function HomepageBlogs() {
               className={styles.container}
             >
               <div className={styles.containerWrapper}>
-                <img
-                  src={blogsImage2}
-                  alt="blogs image 2"
-                  className={styles.containerImage}
-                />
+                <img src={blogsImage2} alt="blogs image 2" className={styles.containerImage} />
               </div>
               <div className={styles.containerContent}>
                 <div className={styles.containerMain}>
                   <p className={styles.containerTags}>Container</p>
                   <h4 className={styles.containerTitle}>
-                    KubeArmor support for Oracle Container Engine for Kubernetes
-                    (OKE)
+                    KubeArmor support for Oracle Container Engine for Kubernetes (OKE)
                   </h4>
                 </div>
                 <div className={styles.containerData}>
                   <p className={styles.containerAuthor}>
-                    by <span className={styles.author}>Rahul Jadav</span>
+                    by <span className={styles.author}>Rahul Jadhav</span>
                   </p>
                   <p className={styles.containerDate}>Feb 11, 2023</p>
                 </div>
@@ -106,11 +95,7 @@ export default function HomepageBlogs() {
               className={styles.container}
             >
               <div className={styles.containerWrapper}>
-                <img
-                  src={blogsImage3}
-                  alt="blogs image 3"
-                  className={styles.containerImage}
-                />
+                <img src={blogsImage3} alt="blogs image 3" className={styles.containerImage} />
               </div>
               <div className={styles.containerContent}>
                 <div className={styles.containerMain}>
@@ -132,18 +117,12 @@ export default function HomepageBlogs() {
               className={styles.container}
             >
               <div className={styles.containerWrapper}>
-                <img
-                  src={blogsImage4}
-                  alt="blogs image 4"
-                  className={styles.containerImage}
-                />
+                <img src={blogsImage4} alt="blogs image 4" className={styles.containerImage} />
               </div>
               <div className={styles.containerContent}>
                 <div className={styles.containerMain}>
                   <p className={styles.containerTags}>LSM</p>
-                  <h4 className={styles.containerTitle}>
-                    KubeArmor Performance Benchmarking Data
-                  </h4>
+                  <h4 className={styles.containerTitle}>KubeArmor Performance Benchmarking Data</h4>
                 </div>
                 <div className={styles.containerData}>
                   <p className={styles.containerAuthor}>
